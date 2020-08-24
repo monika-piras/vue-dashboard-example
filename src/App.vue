@@ -1,10 +1,11 @@
 <template>
   <div id="app" class="container">
     <div class="row">
-      <div class="col-3">
+      <div class="col-2 no-padding">
           <navigation-component/>
       </div>
-      <div class="col-9">
+      <div class="col-10 no-padding">
+        <header></header>
           <router-view/>
       </div>
     </div>
@@ -42,7 +43,18 @@ export default {
 
 .container{
   width: 100%;
+  max-width: 100%;
   padding: 0;
   margin: 0;
+}
+.no-padding {
+  padding:0px;
+}
+header {
+  background-color: #3964b3;
+  border-top: 41px solid #3964b3;
+}
+.row {
+  width: 100%;
 }
 </style>
