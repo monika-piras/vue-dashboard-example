@@ -34,6 +34,10 @@ Vue.use(VueMaterial);
 export default {
   components: {
     NavigationComponent
+  },
+
+  created: function() {
+    this.$store.dispatch("usersStore/loadUsers")
   }
 };
 </script>

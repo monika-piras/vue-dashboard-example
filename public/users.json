@@ -1,0 +1,164 @@
+{
+  "list": [
+    {
+      "id": 1,
+      "name": "Shawna",
+      "surname": "Dubbin",
+      "email": "sdubbin0@geocities.com",
+      "gender": "Male",
+      "title": "Assistant Media Planner"
+    },
+    {
+      "id": 2,
+      "name": "Odette",
+      "surname": "Demageard",
+      "email": "odemageard1@spotify.com",
+      "gender": "Female",
+      "title": "Account Coordinator"
+    },
+    {
+      "id": 3,
+      "name": "Vera",
+      "surname": "Taleworth",
+      "email": "vtaleworth2@google.ca",
+      "gender": "Female",
+      "title": "Community Outreach Specialist"
+    },
+    {
+      "id": 4,
+      "name": "Lonnie",
+      "surname": "Izkovitz",
+      "email": "lizkovitz3@youtu.be",
+      "gender": "Female",
+      "title": "Operator"
+    },
+    {
+      "id": 5,
+      "name": "Thatcher",
+      "surname": "Stave",
+      "email": "tstave4@reference.com",
+      "gender": "Male",
+      "title": "Software Test Engineer III"
+    },
+    {
+      "id": 6,
+      "name": "Karim",
+      "surname": "Chipping",
+      "email": "kchipping5@scribd.com",
+      "gender": "Male",
+      "title": "Safety Technician II"
+    },
+    {
+      "id": 7,
+      "name": "Helge",
+      "surname": "Holyard",
+      "email": "hholyard6@howstuffworks.com",
+      "gender": "Female",
+      "title": "Internal Auditor"
+    },
+    {
+      "id": 8,
+      "name": "Rod",
+      "surname": "Titterton",
+      "email": "rtitterton7@nydailynews.com",
+      "gender": "Male",
+      "title": "Technical Writer"
+    },
+    {
+      "id": 9,
+      "name": "Gawen",
+      "surname": "Applewhite",
+      "email": "gapplewhite8@reverbnation.com",
+      "gender": "Male",
+      "title": "GIS Technical Architect"
+    },
+    {
+      "id": 10,
+      "name": "Nero",
+      "surname": "Mulgrew",
+      "email": "nmulgrew9@plala.or.jp",
+      "gender": "Male",
+      "title": "Staff Scientist"
+    },
+    {
+      "id": 11,
+      "name": "Cybill",
+      "surname": "Rimington",
+      "email": "crimingtona@usnews.com",
+      "gender": "Female",
+      "title": "Assistant Professor"
+    },
+    {
+      "id": 12,
+      "name": "Maureene",
+      "surname": "Eggleson",
+      "email": "megglesonb@elpais.com",
+      "gender": "Female",
+      "title": "Recruiting Manager"
+    },
+    {
+      "id": 13,
+      "name": "Cortney",
+      "surname": "Caulket",
+      "email": "ccaulketc@cbsnews.com",
+      "gender": "Female",
+      "title": "Safety Technician IV"
+    },
+    {
+      "id": 14,
+      "name": "Selig",
+      "surname": "Swynfen",
+      "email": "sswynfend@cpanel.net",
+      "gender": "Male",
+      "title": "Environmental Specialist"
+    },
+    {
+      "id": 15,
+      "name": "Ingar",
+      "surname": "Raggles",
+      "email": "iragglese@cbc.ca",
+      "gender": "Female",
+      "title": "VP Sales"
+    },
+    {
+      "id": 16,
+      "name": "Karmen",
+      "surname": "Mines",
+      "email": "kminesf@topsy.com",
+      "gender": "Female",
+      "title": "Administrative Officer"
+    },
+    {
+      "id": 17,
+      "name": "Salome",
+      "surname": "Judron",
+      "email": "sjudrong@jigsy.com",
+      "gender": "Female",
+      "title": "Staff Scientist"
+    },
+    {
+      "id": 18,
+      "name": "Clarinda",
+      "surname": "Marieton",
+      "email": "cmarietonh@theatlantic.com",
+      "gender": "Female",
+      "title": "Paralegal"
+    },
+    {
+      "id": 19,
+      "name": "Paxon",
+      "surname": "Lotterington",
+      "email": "plotteringtoni@netvibes.com",
+      "gender": "Male",
+      "title": "Marketing Assistant"
+    },
+    {
+      "id": 20,
+      "name": "Maura",
+      "surname": "Thoms",
+      "email": "mthomsj@webeden.co.uk",
+      "gender": "Female",
+      "title": "Actuary"
+    }
+  ]
+}
