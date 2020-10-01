@@ -63,7 +63,7 @@ a {
 nav {
   background-color: #3964b3 !important;
   justify-content: flex-start;
-  height: 100vh;
+  height: 191.5vh;
   flex-direction: column;
   padding: 0;
 
