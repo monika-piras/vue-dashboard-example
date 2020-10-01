@@ -2,19 +2,24 @@
   <div class="container">
       USER DETAIL PAGE
       {{this.user}}
+
+    <form-component/>
   </div>
 </template>
 
 <script>
+import FormComponent from "@/components/FormComponent.vue";
+
 export default {
   name: "UserDetailPage",
+  components: {
+    FormComponent
+  },
   props: {},
   data() {
     return {
       user: Object
     };
-  },
-  components: {
   },
   created() {
      this.user = this.$route.params.paramUser;

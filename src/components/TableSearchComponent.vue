@@ -78,16 +78,12 @@ export default {
   text-align: center;
 }
 
-/deep/ .md-card .md-table .md-theme-default {
-    width: 100%;
-    height: 100%;
-    overflow: hidden;
-
+/deep/ .md-table-content {
+  // width: 90% !important;
+  max-width: 90% !important;
+  height: 100% !important;
+  max-height: 100% !important;
 }
 
-/deep/ .md-content .md-table-content .md-scrollbar .md-theme-default {
-  width: 100%;
-  height: 100%;
-  overflow-y: scroll;
-}
+
 </style>
