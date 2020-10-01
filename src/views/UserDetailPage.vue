@@ -1,8 +1,8 @@
 <template>
   <div class="container">
-      USER DETAIL PAGE
+    USER DETAIL PAGE
 
-    <form-component v-bind:user="this.user"/>
+    <form-component v-if="this.user" v-bind:user="this.user" />
   </div>
 </template>
 
@@ -21,15 +21,14 @@ export default {
     };
   },
   created() {
-     this.user = this.$route.params.paramUser;
-     console.log('The Object is: ' + JSON.stringify(this.$route.params.paramUser));
-  },
-  methods: {
+    this.user = this.$route.params.paramUser;
     
+    if(this.user == null){
+      return this.$router.push('contacts');
+    }
   },
-  computed: {
-   
-  }
+  methods: {},
+  computed: {}
 };
 </script>
 <style scoped>
