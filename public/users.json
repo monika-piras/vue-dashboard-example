@@ -5,7 +5,7 @@
       "name": "Shawna",
       "surname": "Dubbin",
       "email": "sdubbin0@geocities.com",
-      "gender": "Male",
+      "gender": "male",
       "title": "Assistant Media Planner"
     },
     {
@@ -13,7 +13,7 @@
       "name": "Odette",
       "surname": "Demageard",
       "email": "odemageard1@spotify.com",
-      "gender": "Female",
+      "gender": "female",
       "title": "Account Coordinator"
     },
     {
@@ -21,7 +21,7 @@
       "name": "Vera",
       "surname": "Taleworth",
       "email": "vtaleworth2@google.ca",
-      "gender": "Female",
+      "gender": "female",
       "title": "Community Outreach Specialist"
     },
     {
@@ -29,7 +29,7 @@
       "name": "Lonnie",
       "surname": "Izkovitz",
       "email": "lizkovitz3@youtu.be",
-      "gender": "Female",
+      "gender": "female",
       "title": "Operator"
     },
     {
@@ -37,7 +37,7 @@
       "name": "Thatcher",
       "surname": "Stave",
       "email": "tstave4@reference.com",
-      "gender": "Male",
+      "gender": "male",
       "title": "Software Test Engineer III"
     },
     {
@@ -45,7 +45,7 @@
       "name": "Karim",
       "surname": "Chipping",
       "email": "kchipping5@scribd.com",
-      "gender": "Male",
+      "gender": "male",
       "title": "Safety Technician II"
     },
     {
@@ -53,7 +53,7 @@
       "name": "Helge",
       "surname": "Holyard",
       "email": "hholyard6@howstuffworks.com",
-      "gender": "Female",
+      "gender": "female",
       "title": "Internal Auditor"
     },
     {
@@ -61,7 +61,7 @@
       "name": "Rod",
       "surname": "Titterton",
       "email": "rtitterton7@nydailynews.com",
-      "gender": "Male",
+      "gender": "male",
       "title": "Technical Writer"
     },
     {
@@ -69,7 +69,7 @@
       "name": "Gawen",
       "surname": "Applewhite",
       "email": "gapplewhite8@reverbnation.com",
-      "gender": "Male",
+      "gender": "male",
       "title": "GIS Technical Architect"
     },
     {
@@ -77,7 +77,7 @@
       "name": "Nero",
       "surname": "Mulgrew",
       "email": "nmulgrew9@plala.or.jp",
-      "gender": "Male",
+      "gender": "male",
       "title": "Staff Scientist"
     },
     {
@@ -85,7 +85,7 @@
       "name": "Cybill",
       "surname": "Rimington",
       "email": "crimingtona@usnews.com",
-      "gender": "Female",
+      "gender": "female",
       "title": "Assistant Professor"
     },
     {
@@ -93,7 +93,7 @@
       "name": "Maureene",
       "surname": "Eggleson",
       "email": "megglesonb@elpais.com",
-      "gender": "Female",
+      "gender": "female",
       "title": "Recruiting Manager"
     },
     {
@@ -101,7 +101,7 @@
       "name": "Cortney",
       "surname": "Caulket",
       "email": "ccaulketc@cbsnews.com",
-      "gender": "Female",
+      "gender": "female",
       "title": "Safety Technician IV"
     },
     {
@@ -109,7 +109,7 @@
       "name": "Selig",
       "surname": "Swynfen",
       "email": "sswynfend@cpanel.net",
-      "gender": "Male",
+      "gender": "male",
       "title": "Environmental Specialist"
     },
     {
@@ -117,7 +117,7 @@
       "name": "Ingar",
       "surname": "Raggles",
       "email": "iragglese@cbc.ca",
-      "gender": "Female",
+      "gender": "female",
       "title": "VP Sales"
     },
     {
@@ -125,7 +125,7 @@
       "name": "Karmen",
       "surname": "Mines",
       "email": "kminesf@topsy.com",
-      "gender": "Female",
+      "gender": "female",
       "title": "Administrative Officer"
     },
     {
@@ -133,7 +133,7 @@
       "name": "Salome",
       "surname": "Judron",
       "email": "sjudrong@jigsy.com",
-      "gender": "Female",
+      "gender": "female",
       "title": "Staff Scientist"
     },
     {
@@ -141,7 +141,7 @@
       "name": "Clarinda",
       "surname": "Marieton",
       "email": "cmarietonh@theatlantic.com",
-      "gender": "Female",
+      "gender": "female",
       "title": "Paralegal"
     },
     {
@@ -149,7 +149,7 @@
       "name": "Paxon",
       "surname": "Lotterington",
       "email": "plotteringtoni@netvibes.com",
-      "gender": "Male",
+      "gender": "male",
       "title": "Marketing Assistant"
     },
     {
@@ -157,7 +157,7 @@
       "name": "Maura",
       "surname": "Thoms",
       "email": "mthomsj@webeden.co.uk",
-      "gender": "Female",
+      "gender": "female",
       "title": "Actuary"
     }
   ]

@@ -15,7 +15,7 @@
             </b-form-group>
 
             <b-form-group label="Gender:">
-                <b-form-radio-group v-model="form.selected">
+                <b-form-radio-group v-model="form.gender">
                     <b-form-radio name="some-radios" value="male">Male</b-form-radio>
                     <b-form-radio name="some-radios" value="female">Female</b-form-radio>
                 </b-form-radio-group>
@@ -33,13 +33,16 @@
 <script>
 export default {
   name: "FormComponent",
+  props:{
+      user:Object
+  },
   data() {
     return {
       form: {
-        name: "",
-        surname: "",
-        email: "",
-        selected: ""
+        name: this.user.name,
+        surname: this.user.surname,
+        email: this.user.email,
+        gender: this.user.gender
       },
       show: true
     };
@@ -55,6 +58,7 @@ export default {
       this.form.email = "";
       this.form.name = "";
       this.form.surname = "";
+      this.form.gender = "";
       // Trick to reset/clear native browser form validation state
       this.show = false;
       this.$nextTick(() => {

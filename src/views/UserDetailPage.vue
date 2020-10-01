@@ -1,9 +1,8 @@
 <template>
   <div class="container">
       USER DETAIL PAGE
-      {{this.user}}
 
-    <form-component/>
+    <form-component v-bind:user="this.user"/>
   </div>
 </template>
 
