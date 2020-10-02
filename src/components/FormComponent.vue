@@ -3,11 +3,11 @@
         <b-form @submit="onSubmit" @reset="onReset" v-if="show">
 
             <b-form-group id="input-group-2" label="Name:" label-for="input-2">
-                <b-form-input id="input-2" v-model="form.name" required placeholder="Enter name"></b-form-input>
+                <b-form-input id="input-2" v-model="form.fname" required placeholder="Enter name"></b-form-input>
             </b-form-group>
 
             <b-form-group id="input-group-2" label="Surname:" label-for="input-2b">
-                <b-form-input id="input-2b" v-model="form.surname" required placeholder="Enter Surname"></b-form-input>
+                <b-form-input id="input-2b" v-model="form.lname" required placeholder="Enter Surname"></b-form-input>
             </b-form-group>
 
             <b-form-group id="input-group-1" label="Email address:" label-for="input-1" description="We'll never share your email with anyone else.">
@@ -39,18 +39,27 @@ export default {
   data() {
     return {
       form: {
-        name: this.user.name,
-        surname: this.user.surname,
+        fname: this.user.name,
+        lname: this.user.surname,
         email: this.user.email,
         gender: this.user.gender
       },
-      show: true
+      show: true,
+
     };
   },
   methods: {
     onSubmit(evt) {
       evt.preventDefault();
-      alert(JSON.stringify(this.form));
+    //   alert(JSON.stringify(this.form));
+      var newUser = {
+          name: this.form.fname,
+          surname: this.form.lname,
+          email: this.form.email,
+          gender: this.form.gender
+      };
+      alert(JSON.stringify(newUser));
+    
     },
     onReset(evt) {
       evt.preventDefault();
@@ -65,6 +74,11 @@ export default {
         this.show = true;
       });
     }
+  },
+
+  computed: {
+      
+     
   }
 };
 </script>
