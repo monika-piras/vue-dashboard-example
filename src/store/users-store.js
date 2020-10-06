@@ -22,10 +22,6 @@ export default {
             })
         },
 
-        // getUserDetail: (state) => (userID) => {
-        //     const userIndex = state.allUsers.findIndex(x => x.id == userID);
-        //     return state.allUsers[userIndex];
-        // },
     },
 
     mutations: {
@@ -37,7 +33,12 @@ export default {
                     state.allUsers.push(...list);
                 })
         },
-
+        newUserUpdatedMutation(state, userParam) {
+        console.log("new user mutation ", userParam);
+           console.log(state.allUsers);
+           var index = state.allUsers.findIndex((x) => x.id == userParam.id);
+           state.allUsers.splice(index, 1, userParam);
+        }
         // addFilm(state, filmNew) {
         //     state.allFilms.push(filmNew);
         // }
@@ -47,9 +48,10 @@ export default {
         loadUsers(context) {
             context.commit('loadUsersMutation');
         },
-        //     callActionAddFilm(context, filmParam) {
-        //         context.commit('addFilm', filmParam);
-        //     },
+        newUserUpdated(context, userParam){
+            context.commit('newUserUpdatedMutation', userParam);
+        }
+       
     },
 
 };

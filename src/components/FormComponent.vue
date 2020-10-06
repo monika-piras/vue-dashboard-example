@@ -51,15 +51,15 @@ export default {
   methods: {
     onSubmit(evt) {
       evt.preventDefault();
-    //   alert(JSON.stringify(this.form));
       var newUser = {
           name: this.form.fname,
           surname: this.form.lname,
           email: this.form.email,
-          gender: this.form.gender
+          gender: this.form.gender,
+          id: this.user.id
       };
-      alert(JSON.stringify(newUser));
-    
+      this.$store.dispatch('usersStore/newUserUpdated', newUser);
+      this.$router.push('contacts');
     },
     onReset(evt) {
       evt.preventDefault();
@@ -77,7 +77,7 @@ export default {
   },
 
   computed: {
-      
+   
      
   }
 };
