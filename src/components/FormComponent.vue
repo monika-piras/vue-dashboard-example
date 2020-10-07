@@ -1,40 +1,56 @@
 <template>
     <div>
-        <b-form @submit="onSubmit" @reset="onReset" v-if="show">
+        <b-form @submit="onSubmit" v-if="show">
 
-            <b-form-group id="input-group-2" label="Name:" label-for="input-2">
-                <b-form-input id="input-2" v-model="form.fname" required placeholder="Enter name"></b-form-input>
+            <b-form-group  label-cols-sm="3" id="input-group-2" label="Name:" label-for="input-2">
+                <b-form-input  id="input-2" v-model="form.fname" :state="validationName" required placeholder="Enter name"></b-form-input>
+
+                <b-form-invalid-feedback :state="validationName">
+                    Your Name must be 2-20 characters long.
+                </b-form-invalid-feedback>
+
             </b-form-group>
 
-            <b-form-group id="input-group-2" label="Surname:" label-for="input-2b">
-                <b-form-input id="input-2b" v-model="form.lname" required placeholder="Enter Surname"></b-form-input>
+            <b-form-group  label-cols-sm="3" id="input-group-2" label="Surname:" label-for="input-2b">
+                <b-form-input id="input-2b" v-model="form.lname" :state="validationSurname" required placeholder="Enter Surname"></b-form-input>
+
+                <b-form-invalid-feedback :state="validationSurname">
+                    Your Surname ID must be 2-20 characters long.
+                </b-form-invalid-feedback>
+
             </b-form-group>
 
-            <b-form-group id="input-group-1" label="Email address:" label-for="input-1" description="We'll never share your email with anyone else.">
-                <b-form-input id="input-1" v-model="form.email" type="email" required placeholder="Enter email"></b-form-input>
+            <b-form-group  label-cols-sm="3" id="input-group-1" label="Email address:" label-for="input-1" description="We'll never share your email with anyone else.">
+                <b-form-input id="input-1" v-model="form.email" :state="validationEmail" type="email" required placeholder="Enter email"></b-form-input>
+            
+             <b-form-invalid-feedback :state="validationEmail">
+                    Your Email is incorrect.
+                </b-form-invalid-feedback>
+            
+            
             </b-form-group>
 
-            <b-form-group label="Gender:">
-                <b-form-radio-group v-model="form.gender">
+            <b-form-group  label-cols-sm="3" label="Gender:">
+                <b-form-radio-group class="pt-2" v-model="form.gender">
                     <b-form-radio name="some-radios" value="male">Male</b-form-radio>
                     <b-form-radio name="some-radios" value="female">Female</b-form-radio>
                 </b-form-radio-group>
             </b-form-group>
 
             <b-button type="submit" variant="primary">Submit</b-button>
-            <b-button type="reset" variant="danger">Reset</b-button>
+            <!-- <b-button type="reset" variant="danger">Reset</b-button> -->
         </b-form>
-        <b-card class="mt-3" header="Form Data Result">
+        <!-- <b-card class="mt-3" header="Form Data Result">
             <pre class="m-0">{{ form }}</pre>
-        </b-card>
+        </b-card> -->
     </div>
 </template>
 
 <script>
 export default {
   name: "FormComponent",
-  props:{
-      user:Object
+  props: {
+    user: Object,
   },
   data() {
     return {
@@ -44,41 +60,48 @@ export default {
         email: this.user.email,
         gender: this.user.gender
       },
-      show: true,
-
+      show: true
     };
   },
   methods: {
     onSubmit(evt) {
-      evt.preventDefault();
-      var newUser = {
-          name: this.form.fname,
-          surname: this.form.lname,
-          email: this.form.email,
-          gender: this.form.gender,
-          id: this.user.id
+      
+      if(this.validationName && this.validationSurname && this.validationEmail) {
+        
+        var newUser = {
+        name: this.form.fname,
+        surname: this.form.lname,
+        email: this.form.email,
+        gender: this.form.gender,
+        id: this.user.id
       };
-      this.$store.dispatch('usersStore/newUserUpdated', newUser);
-      this.$router.push('contacts');
-    },
-    onReset(evt) {
+        this.$store.dispatch("usersStore/newUserUpdated", newUser);
+        this.$router.push("contacts");
+      }
+
       evt.preventDefault();
-      // Reset our form values
-      this.form.email = "";
-      this.form.name = "";
-      this.form.surname = "";
-      this.form.gender = "";
-      // Trick to reset/clear native browser form validation state
-      this.show = false;
-      this.$nextTick(() => {
-        this.show = true;
-      });
+      
+     
     }
   },
 
   computed: {
-   
-     
+    validationName() {
+      return this.form.fname.length > 1 && this.form.fname.length <= 20;
+    },
+    validationSurname() {
+      return this.form.lname.length > 1 && this.form.lname.length <= 20;
+    },
+    validationEmail() {
+      var re = /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+      return re.test(this.form.email);
+    }
   }
 };
 </script>
+<style lang="scss" scoped>
+
+/deep/ .form-row>.col, .form-row>[class*=col-] {
+  text-align: left;
+}
+</style>
