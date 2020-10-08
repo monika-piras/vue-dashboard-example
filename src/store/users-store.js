@@ -30,12 +30,15 @@ export default {
                 .get('/users.json')
                 .then(response => {
                     const list = response.data.list;
+                    state.allUsers.splice(0, state.allUsers.length);
                     state.allUsers.push(...list);
                 })
         },
         newUserUpdatedMutation(state, userParam) {
-        console.log("new user mutation ", userParam);
+            
+           console.log("new user mutation ", userParam);
            console.log(state.allUsers);
+
            var index = state.allUsers.findIndex((x) => x.id == userParam.id);
            state.allUsers.splice(index, 1, userParam);
         }

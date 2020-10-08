@@ -1,6 +1,6 @@
 <template>
   <div class="container">
-    USER DETAIL PAGE
+    <h4> USER DETAIL PAGE </h4>
 
     <form-component v-if="this.user" v-bind:user="this.user" />
   </div>
@@ -31,6 +31,11 @@ export default {
   computed: {}
 };
 </script>
-<style scoped>
-
+<style lang="scss" scoped>
+h4 {
+  margin: 30px;
+}
+/deep/.container {
+  max-height: 100px !important;
+}
 </style>
