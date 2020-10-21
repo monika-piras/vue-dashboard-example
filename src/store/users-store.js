@@ -14,11 +14,11 @@ export default {
         getUsers: (state) => state.allUsers,
 
         search: (state) => (searchedValue) => {
-            
+
             searchedValue = searchedValue.toLowerCase();
 
-            return state.allUsers.filter((item) => { 
-                return item.name.toLowerCase().includes(searchedValue); 
+            return state.allUsers.filter((item) => {
+                return item.name.toLowerCase().includes(searchedValue);
             })
         },
 
@@ -34,13 +34,12 @@ export default {
                     state.allUsers.push(...list);
                 })
         },
-        newUserUpdatedMutation(state, userParam) {
-            
-           console.log("new user mutation ", userParam);
-           console.log(state.allUsers);
+        updateUserMutation(state, userParam) {
 
-           var index = state.allUsers.findIndex((x) => x.id == userParam.id);
-           state.allUsers.splice(index, 1, userParam);
+            console.log("new user mutation ", userParam);
+            //    console.log(state.allUsers);
+            var index = state.allUsers.findIndex((x) => x.id == userParam.id);
+            state.allUsers.splice(index, 1, userParam);
         }
         // addFilm(state, filmNew) {
         //     state.allFilms.push(filmNew);
@@ -51,10 +50,17 @@ export default {
         loadUsers(context) {
             context.commit('loadUsersMutation');
         },
-        newUserUpdated(context, userParam){
-            context.commit('newUserUpdatedMutation', userParam);
+        updateUser(context, userParam) {
+            console.log('call action updateUser');
+            return new Promise((resolve, reject) => {
+                setTimeout(() => {
+                    context.commit('updateUserMutation', userParam);
+                    resolve();
+                    // reject();
+                }, 2000);
+
+            });
         }
-       
     },
 
 };
