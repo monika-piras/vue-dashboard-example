@@ -40,7 +40,7 @@
           <b-form-radio name="some-radios" value="female">Female</b-form-radio>
         </b-form-radio-group>
       </b-form-group>
-      
+
       <b-button type="submit" variant="primary">Submit</b-button>
     </b-form>
 
@@ -58,14 +58,27 @@ export default {
       isLoading: false,
 
       form: {
-        fname: this.user.name,
-        lname: this.user.surname,
-        email: this.user.email,
-        gender: this.user.gender
+        fname: "",
+        lname: "",
+        email: "",
+        gender: ""
       }
     };
   },
+  created: function() {
+    console.log("created");
+
+    if (this.user) {
+      this.fillForm();
+    }
+  },
   methods: {
+    fillForm() {
+      (this.form.fname = this.user.name),
+        (this.form.lname = this.user.surname),
+        (this.form.email = this.user.email),
+        (this.form.gender = this.user.gender);
+    },
     onSubmit(evt) {
       if (
         this.validationName &&
@@ -73,6 +86,7 @@ export default {
         this.validationEmail
       ) {
         this.isLoading = true;
+
         var newUser = {
           name: this.form.fname,
           surname: this.form.lname,
@@ -81,25 +95,49 @@ export default {
           id: this.user.id
         };
 
-        this.$store
-          .dispatch("usersStore/updateUser", newUser)
-          .then(response => {
-            this.$root.$bvToast.toast("Contact successfully updated", {
-              title: `Success`,
-              variant: 'success',
-              solid: true
+        if (this.user) {
+          this.$store
+            .dispatch("usersStore/updateUser", newUser)
+            .then(response => {
+              this.$root.$bvToast.toast("Contact successfully updated", {
+                title: `Success`,
+                variant: "success",
+                solid: true
+              });
+              this.$router.push("contacts");
+            })
+            .catch(err => {
+              this.isLoading = false;
+
+              this.$root.$bvToast.toast("Error updating contact", {
+                title: `Error`,
+                variant: "warning",
+                solid: true
+              });
+              console.error("Error updating contact");
             });
-            this.$router.push("contacts");
-          })
-          .catch(err => {
-            this.isLoading = false;
-            this.$root.$bvToast.toast("Error updating contact", {
-              title: `Error`,
-              variant: 'warning',
-              solid: true
+        } else {
+          this.$store
+            .dispatch("usersStore/addUser", newUser)
+            .then(response => {
+              this.$root.$bvToast.toast("Contact successfully added", {
+                title: `Success`,
+                variant: "success",
+                solid: true
+              });
+              this.$router.push("contacts");
+            })
+            .catch(err => {
+              this.isLoading = false;
+
+              this.$root.$bvToast.toast("Error adding contact", {
+                title: `Error`,
+                variant: "warning",
+                solid: true
+              });
+              console.error("Error adding contact");
             });
-            console.error("Error updating contact");
-          });
+        }
       }
 
       evt.preventDefault();
@@ -125,5 +163,4 @@ export default {
 .form-row > [class*="col-"] {
   text-align: left;
 }
-
 </style>

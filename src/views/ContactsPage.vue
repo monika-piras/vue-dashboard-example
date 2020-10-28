@@ -1,6 +1,10 @@
 <template>
   <div class="page-style">
-    <h1>Contacts</h1>
+    <div style="position: relative;">
+      <h1>Contacts</h1>
+      <button @click="addUser()" class="buttonStyle">Add user</button>
+    </div>
+
     <table-search-component/>
   </div>
 </template>
@@ -14,6 +18,11 @@ export default {
   name: "ContactsPage",
   components: {
     TableSearchComponent
+  },
+  methods: {
+    addUser() {
+       this.$router.push('addUserPage');
+    }
   }
 };
 </script>
@@ -24,6 +33,10 @@ h1 {
 .page-style {
   padding: 20px;
 }
-
+.buttonStyle {
+  position: absolute; 
+  right: 0; 
+  top: 0; 
+}
 </style>
 
