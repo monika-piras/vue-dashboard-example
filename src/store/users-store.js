@@ -44,7 +44,7 @@ export default {
         addUserMutation(state, userParam) {
 
             console.log("add new user mutation ", userParam);
-           
+           state.allUsers.push(userParam);
         }
     },
 
