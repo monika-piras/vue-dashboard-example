@@ -1,6 +1,7 @@
 <template>
   <div id="app" class="container">
     <div class="row">
+    
       <div class="col-2 no-padding">
           <navigation-component/>
       </div>
@@ -14,30 +15,28 @@
 
 <script>
 import NavigationComponent from "@/components/NavigationComponent.vue";
-
 import Vue from "vue";
 import { BootstrapVue, BootstrapVueIcons } from "bootstrap-vue";
-
-// import 'bootstrap/dist/css/bootstrap.css'
 import "bootstrap-vue/dist/bootstrap-vue.css";
+import VueMaterial from "vue-material";
+import "vue-material/dist/vue-material.min.css";
+import "vue-material/dist/theme/default.css";
+import VueApexCharts from "vue-apexcharts";
 
 Vue.use(BootstrapVue);
 Vue.use(BootstrapVueIcons);
-
-import VueMaterial from 'vue-material';
-import 'vue-material/dist/vue-material.min.css';
-import 'vue-material/dist/theme/default.css';
-
 Vue.use(VueMaterial);
-
+Vue.use(VueApexCharts);
+Vue.component("apexchart", VueApexCharts);
 
 export default {
+ 
   components: {
     NavigationComponent
   },
 
   created: function() {
-    this.$store.dispatch("usersStore/loadUsers")
+    this.$store.dispatch("usersStore/loadUsers");
   }
 };
 </script>
@@ -45,25 +44,27 @@ export default {
 
 <style lang="scss">
 #app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
+  // font-family: Avenir, Helvetica, Arial, sans-serif;
+  font-family: "Nunito", sans-serif;
+  font-size: 16px;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #2c3e50;
 }
 
-.container{
+.container {
   width: 100%;
   max-width: 100%;
   padding: 0;
   margin: 0;
 }
 .no-padding {
-  padding:0px;
+  padding: 0px;
 }
 header {
-  background-color: #3964b3;
-  border-top: 41px solid #3964b3;
+  background-color: rgb(33, 44, 61);
+  border-top: 41px solid rgb(33, 44, 61);
 }
 .row {
   width: 100%;

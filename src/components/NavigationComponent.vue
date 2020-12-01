@@ -1,12 +1,12 @@
 <template>
   <div>
     <nav class="navbar navbar-light bg-light">
-      <router-link to="/" class="navbar-brand">Vue Dashboard</router-link>
+      <router-link to="/" class="navbar-brand">VUE DASHBOARD</router-link>
 
       <ul class="navbar-nav">
         <li class="nav-item">
           <router-link to="/" class="nav-link">
-            <b-icon icon="house" scale="1.5" class="icon-style"></b-icon> Home</router-link>
+            <b-icon icon="house" scale="1.5" class="icon-style"></b-icon> HOME</router-link>
         </li>
         <li class="nav-item">
           <router-link to="/contacts" class="nav-link">
@@ -35,14 +35,14 @@ export default {
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped lang="scss">
 a {
-  color: #fff !important;
-  font-weight: bold !important;
+  color: #92abcf !important;
+  font-weight: 600 !important;
   width: 100%;
   margin: 0;
 }
 .nav-link {
-  color: #fff !important;
-  font-weight: bold !important;
+  color: #92abcf !important;
+  font-weight: 400 !important;
   width: 100%;
   padding-left: 3rem;
 
@@ -53,15 +53,15 @@ a {
   &.router-link-exact-active {
     background-color: #fff;
     cursor: pointer;
-    color: #3964b3 !important;
+    color: rgb(33, 44, 61) !important;
 
     .icon-style {
-      color: #3964b3 !important;
+      color: rgb(33, 44, 61) !important;
     }
   }
 }
 nav {
-  background-color: #3964b3 !important;
+  background-color: rgb(33, 44, 61) !important;
   justify-content: flex-start;
   height: 191.5vh;
   flex-direction: column;

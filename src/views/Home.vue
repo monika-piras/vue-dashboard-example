@@ -7,19 +7,29 @@
     </div>
 
     <button @click="handleOnclick()">Promise</button>
+
+    <template>
+      <div>
+        <apexchart width="380" type="donut" :options="options" :series="series"></apexchart>
+      </div>
+    </template>
+    <div>
+    </div>
   </div>
 </template>
 
 <script>
 // @ is an alias to /src
-
 export default {
   name: "Home",
   components: {},
   data() {
     return {
       url: "",
-      isLoading: false
+      isLoading: false,
+
+      options: {},
+      series: [44, 55, 41, 17, 15]
     };
   },
   methods: {
@@ -37,7 +47,7 @@ export default {
 
     handleOnclick() {
       this.isLoading = true;
-      
+
       this.retrieveImg().then(
         data => {
           console.log("promise resolved with ", data);
