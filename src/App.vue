@@ -64,7 +64,7 @@ export default {
 }
 header {
   background-color: rgb(33, 44, 61);
-  border-top: 41px solid rgb(33, 44, 61);
+  border-top: 70px solid rgb(33, 44, 61);
 }
 .row {
   width: 100%;

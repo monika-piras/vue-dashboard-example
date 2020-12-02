@@ -72,7 +72,8 @@ nav {
   }
 
   .navbar-brand {
-    margin-bottom: 30px;
+    margin-top: 20px;
+    margin-bottom: 20px;
   }
 }
 .nav-item {

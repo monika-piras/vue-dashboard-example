@@ -86,16 +86,15 @@ export default {
         this.validationEmail
       ) {
         this.isLoading = true;
-       
-        if (this.user) {
 
-        var newUser = {
-          name: this.form.fname,
-          surname: this.form.lname,
-          email: this.form.email,
-          gender: this.form.gender,
-          id: this.user.id ,
-        };
+        if (this.user) {
+          var newUser = {
+            name: this.form.fname,
+            surname: this.form.lname,
+            email: this.form.email,
+            gender: this.form.gender,
+            id: this.user.id
+          };
 
           this.$store
             .dispatch("usersStore/updateUser", newUser)
@@ -118,13 +117,13 @@ export default {
               console.error("Error updating contact");
             });
         } else {
-      var newUser = {
-          name: this.form.fname,
-          surname: this.form.lname,
-          email: this.form.email,
-          gender: this.form.gender,
-          id:Math.random()*100,
-        };
+          var newUser = {
+            name: this.form.fname,
+            surname: this.form.lname,
+            email: this.form.email,
+            gender: this.form.gender,
+            id: Math.random() * 100
+          };
 
           this.$store
             .dispatch("usersStore/addUser", newUser)
