@@ -6,6 +6,7 @@
       "surname": "Dubbin",
       "email": "sdubbin0@geocities.com",
       "gender": "male",
+      "age": 25,
       "title": "Assistant Media Planner"
     },
     {
@@ -14,6 +15,7 @@
       "surname": "Demageard",
       "email": "odemageard1@spotify.com",
       "gender": "female",
+      "age": 35,
       "title": "Account Coordinator"
     },
     {
@@ -22,6 +24,7 @@
       "surname": "Taleworth",
       "email": "vtaleworth2@google.ca",
       "gender": "female",
+      "age": 18,
       "title": "Community Outreach Specialist"
     },
     {
@@ -30,6 +33,7 @@
       "surname": "Izkovitz",
       "email": "lizkovitz3@youtu.be",
       "gender": "female",
+      "age": 28,
       "title": "Operator"
     },
     {
@@ -38,6 +42,7 @@
       "surname": "Stave",
       "email": "tstave4@reference.com",
       "gender": "male",
+      "age": 57,
       "title": "Software Test Engineer III"
     },
     {
@@ -46,6 +51,7 @@
       "surname": "Chipping",
       "email": "kchipping5@scribd.com",
       "gender": "male",
+      "age": 60,
       "title": "Safety Technician II"
     },
     {
@@ -54,6 +60,7 @@
       "surname": "Holyard",
       "email": "hholyard6@howstuffworks.com",
       "gender": "female",
+      "age": 20,
       "title": "Internal Auditor"
     },
     {
@@ -62,6 +69,7 @@
       "surname": "Titterton",
       "email": "rtitterton7@nydailynews.com",
       "gender": "male",
+      "age": 42,
       "title": "Technical Writer"
     },
     {
@@ -70,6 +78,7 @@
       "surname": "Applewhite",
       "email": "gapplewhite8@reverbnation.com",
       "gender": "male",
+      "age": 38,
       "title": "GIS Technical Architect"
     },
     {
@@ -78,6 +87,7 @@
       "surname": "Mulgrew",
       "email": "nmulgrew9@plala.or.jp",
       "gender": "male",
+      "age": 30,
       "title": "Staff Scientist"
     },
     {
@@ -86,6 +96,7 @@
       "surname": "Rimington",
       "email": "crimingtona@usnews.com",
       "gender": "female",
+      "age": 35,
       "title": "Assistant Professor"
     },
     {
@@ -94,6 +105,7 @@
       "surname": "Eggleson",
       "email": "megglesonb@elpais.com",
       "gender": "female",
+      "age": 64,
       "title": "Recruiting Manager"
     },
     {
@@ -102,6 +114,7 @@
       "surname": "Caulket",
       "email": "ccaulketc@cbsnews.com",
       "gender": "female",
+      "age": 48,
       "title": "Safety Technician IV"
     },
     {
@@ -110,6 +123,7 @@
       "surname": "Swynfen",
       "email": "sswynfend@cpanel.net",
       "gender": "male",
+      "age": 44,
       "title": "Environmental Specialist"
     },
     {
@@ -118,6 +132,7 @@
       "surname": "Raggles",
       "email": "iragglese@cbc.ca",
       "gender": "female",
+      "age": 22,
       "title": "VP Sales"
     },
     {
@@ -126,6 +141,7 @@
       "surname": "Mines",
       "email": "kminesf@topsy.com",
       "gender": "female",
+      "age": 40,
       "title": "Administrative Officer"
     },
     {
@@ -134,6 +150,7 @@
       "surname": "Judron",
       "email": "sjudrong@jigsy.com",
       "gender": "female",
+      "age": 39,
       "title": "Staff Scientist"
     },
     {
@@ -142,6 +159,7 @@
       "surname": "Marieton",
       "email": "cmarietonh@theatlantic.com",
       "gender": "female",
+      "age": 62,
       "title": "Paralegal"
     },
     {
@@ -150,6 +168,7 @@
       "surname": "Lotterington",
       "email": "plotteringtoni@netvibes.com",
       "gender": "male",
+      "age": 67,
       "title": "Marketing Assistant"
     },
     {
@@ -158,6 +177,7 @@
       "surname": "Thoms",
       "email": "mthomsj@webeden.co.uk",
       "gender": "female",
+      "age": 60,
       "title": "Actuary"
     }
   ]
