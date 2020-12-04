@@ -13,7 +13,8 @@
             <b-icon icon="people" scale="1.5" class="icon-style"></b-icon>Contacts</router-link>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">Link</a>
+          <router-link to="/products" class="nav-link">
+           <b-icon icon="cart" scale="1.5" class="icon-style"></b-icon>Products</router-link>
         </li>
         <li class="nav-item">
           <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>

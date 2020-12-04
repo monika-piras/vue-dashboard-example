@@ -95,7 +95,7 @@ export default {
         },
         series: [
           {
-            name: "series-1",
+            name: "number",
             data: [this.men, this.women]
           }
         ]
