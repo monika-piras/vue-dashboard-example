@@ -2,88 +2,88 @@
     "list": [
       {
         "id": 1,
-        "nameProduct": "Shawna",
-        "gender": "technology",
+        "title": "Computers & Softwares",
+        "category": "technology",
         "condition": "new",
-        "description": "Assistant Media Planner",
+        "description": "LapTops, Tablets, iPadr",
         "image": "https://picsum.photos/400/400/?image=20"
       },
       {
         "id": 2,
-        "nameProduct": "Shawna",
-        "gender": "technology",
+        "title": "Electronics & Accessories",
+        "category": "technology",
         "condition": "new",
-        "description": "Assistant Media Planner",
+        "description": "TV, DvDs, iPhones",
         "image": "https://picsum.photos/400/400/?image=20"
       },
       {
         "id": 3,
-        "nameProduct": "Shawna",
-        "gender": "technology",
+        "title": "Toys & Games",
+        "category": "technology",
         "condition": "new",
-        "description": "Assistant Media Planner",
+        "description": "Games, Toys, Puzzles",
         "image": "https://picsum.photos/400/400/?image=20"
       },
       {
         "id": 4,
-        "nameProduct": "Shawna",
-        "gender": "technology",
+        "title": "VideoGames",
+        "category": "technology",
         "condition": "new",
-        "description": "Assistant Media Planner",
+        "description": "Games, PlayStation, XBoxes,",
         "image": "https://picsum.photos/400/400/?image=20"
       },
       {
         "id": 5,
-        "nameProduct": "Shawna",
-        "gender": "technology",
+        "title": "Beauty picks",
+        "category": "technology",
         "condition": "new",
         "description": "Assistant Media Planner",
         "image": "https://picsum.photos/400/400/?image=20"
       },
       {
         "id": 6,
-        "nameProduct": "Shawna",
-        "gender": "technology",
+        "title": "Shawna",
+        "category": "technology",
         "condition": "new",
         "description": "Assistant Media Planner",
         "image": "https://picsum.photos/400/400/?image=20"
       },
       {
         "id": 7,
-        "nameProduct": "Shawna",
-        "gender": "technology",
+        "title": "Shawna",
+        "category": "technology",
         "condition": "new",
         "description": "Assistant Media Planner",
         "image": "https://picsum.photos/400/400/?image=20"
       },
       {
         "id": 8,
-        "nameProduct": "Shawna",
-        "gender": "technology",
+        "title": "Shawna",
+        "category": "technology",
         "condition": "new",
         "description": "Assistant Media Planner",
         "image": "https://picsum.photos/400/400/?image=20"
       },
       {
         "id": 9,
-        "nameProduct": "Shawna",
-        "gender": "technology",
+        "title": "Shawna",
+        "category": "technology",
         "condition": "new",
         "description": "Assistant Media Planner",
         "image": "https://picsum.photos/400/400/?image=20"
       },
       {
         "id": 10,
-        "nameProduct": "Shawna",
-        "gender": "technology",
+        "title": "Shawna",
+        "category": "technology",
         "condition": "new",
         "description": "Assistant Media Planner",
         "image": "https://picsum.photos/400/400/?image=20"
       },
       {
         "id": 11,
-        "nameProduct": "Shawna",
-        "gender": "technology",
+        "title": "Shawna",
+        "category": "technology",
         "condition": "new",
         "description": "Assistant Media Planner",
         "image": "https://picsum.photos/400/400/?image=20"

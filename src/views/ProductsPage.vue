@@ -7,9 +7,11 @@
                 <div class="card">
                     <div class="card-body">
                         <img class="card-img-top" :src="item.image" style="width:18rem;">
-                        <h5 class="card-title">{{item.nameProduct}}</h5>
+                        <h5 class="card-title">{{item.title}}</h5>
                         <p class="card-text">{{item.description}}</p>
-                        <button class="btn btn-primary">Discover More</button>
+                         <h6>Category: {{item.category}}</h6>                   
+                        <h6>Condition: {{item.condition}}</h6>
+                        <button class="btn btn-primary">See More</button>
                     </div>
                 </div>
             </div>
@@ -30,7 +32,7 @@
                                     </b-col>
                                     <b-col md="6">
 
-                                        <b-card-body :title="item.nameProduct">
+                                        <b-card-body :title="item.title">
                                             <b-card-text> {{item.description}} </b-card-text>
                                         </b-card-body>
                                     </b-col>
@@ -68,6 +70,10 @@ export default {
 <style lang="scss" scoped>
 h1 {
   text-align: left;
+}
+h5 {
+    font-weight: 600;
+    margin: 20px;
 }
 .page-style {
   padding: 20px;
