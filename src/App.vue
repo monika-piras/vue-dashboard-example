@@ -1,13 +1,13 @@
 <template>
   <div id="app" class="container">
     <div class="row">
-    
+
       <div class="col-2 no-padding">
-          <navigation-component/>
+        <navigation-component/>
       </div>
       <div class="col-10 no-padding">
         <header></header>
-          <router-view/>
+        <router-view/>
       </div>
     </div>
   </div>
@@ -30,13 +30,13 @@ Vue.use(VueApexCharts);
 Vue.component("apexchart", VueApexCharts);
 
 export default {
- 
   components: {
     NavigationComponent
   },
 
   created: function() {
     this.$store.dispatch("usersStore/loadUsers");
+    this.$store.dispatch("productsStore/loadProducts");
   }
 };
 </script>

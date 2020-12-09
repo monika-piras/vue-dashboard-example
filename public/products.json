@@ -1,0 +1,93 @@
+{
+    "list": [
+      {
+        "id": 1,
+        "nameProduct": "Shawna",
+        "gender": "technology",
+        "condition": "new",
+        "description": "Assistant Media Planner",
+        "image": "https://picsum.photos/400/400/?image=20"
+      },
+      {
+        "id": 2,
+        "nameProduct": "Shawna",
+        "gender": "technology",
+        "condition": "new",
+        "description": "Assistant Media Planner",
+        "image": "https://picsum.photos/400/400/?image=20"
+      },
+      {
+        "id": 3,
+        "nameProduct": "Shawna",
+        "gender": "technology",
+        "condition": "new",
+        "description": "Assistant Media Planner",
+        "image": "https://picsum.photos/400/400/?image=20"
+      },
+      {
+        "id": 4,
+        "nameProduct": "Shawna",
+        "gender": "technology",
+        "condition": "new",
+        "description": "Assistant Media Planner",
+        "image": "https://picsum.photos/400/400/?image=20"
+      },
+      {
+        "id": 5,
+        "nameProduct": "Shawna",
+        "gender": "technology",
+        "condition": "new",
+        "description": "Assistant Media Planner",
+        "image": "https://picsum.photos/400/400/?image=20"
+      },
+      {
+        "id": 6,
+        "nameProduct": "Shawna",
+        "gender": "technology",
+        "condition": "new",
+        "description": "Assistant Media Planner",
+        "image": "https://picsum.photos/400/400/?image=20"
+      },
+      {
+        "id": 7,
+        "nameProduct": "Shawna",
+        "gender": "technology",
+        "condition": "new",
+        "description": "Assistant Media Planner",
+        "image": "https://picsum.photos/400/400/?image=20"
+      },
+      {
+        "id": 8,
+        "nameProduct": "Shawna",
+        "gender": "technology",
+        "condition": "new",
+        "description": "Assistant Media Planner",
+        "image": "https://picsum.photos/400/400/?image=20"
+      },
+      {
+        "id": 9,
+        "nameProduct": "Shawna",
+        "gender": "technology",
+        "condition": "new",
+        "description": "Assistant Media Planner",
+        "image": "https://picsum.photos/400/400/?image=20"
+      },
+      {
+        "id": 10,
+        "nameProduct": "Shawna",
+        "gender": "technology",
+        "condition": "new",
+        "description": "Assistant Media Planner",
+        "image": "https://picsum.photos/400/400/?image=20"
+      },
+      {
+        "id": 11,
+        "nameProduct": "Shawna",
+        "gender": "technology",
+        "condition": "new",
+        "description": "Assistant Media Planner",
+        "image": "https://picsum.photos/400/400/?image=20"
+      }
+    
+    ]
+  }

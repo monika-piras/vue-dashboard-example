@@ -2,23 +2,22 @@
     <div class="page-style">
         <h1>Products</h1>
 
-        <table class="table">
+        <table class="table" v-for="item in items">
 
             <tbody>
                 <tr>
-                    <th scope="row">1</th>
+                    <th scope="row">{{item.id}}</th>
                     <td>
                         <b-card-group>
                             <b-card no-body class="overflow-hidden" style="max-width: 540px;">
                                 <b-row no-gutters>
                                     <b-col md="6">
-                                        <b-card-img src="https://picsum.photos/400/400/?image=20" alt="Image" class="rounded-0"></b-card-img>
+                                        <b-card-img :src="item.image" alt="Image" class="rounded-0">{{}}</b-card-img>
                                     </b-col>
                                     <b-col md="6">
-                                        <b-card-body title="Horizontal Card">
-                                            <b-card-text>
-                                                This is a wider card with supporting text as a natural lead-in to additional content. This content is a little bit longer.
-                                            </b-card-text>
+
+                                        <b-card-body :title="item.nameProduct">
+                                            <b-card-text> {{item.description}} </b-card-text>
                                         </b-card-body>
                                     </b-col>
                                 </b-row>
@@ -27,50 +26,7 @@
                         </b-card-group>
                     </td>
                 </tr>
-                <tr>
-                    <th scope="row">2</th>
-                    <td>
-                        <b-card-group>
-                            <b-card no-body class="overflow-hidden" style="max-width: 540px;">
-                                <b-row no-gutters>
-                                    <b-col md="6">
-                                        <b-card-img src="https://picsum.photos/400/400/?image=20" alt="Image" class="rounded-0"></b-card-img>
-                                    </b-col>
-                                    <b-col md="6">
-                                        <b-card-body title="Horizontal Card">
-                                            <b-card-text>
-                                                This is a wider card with supporting text as a natural lead-in to additional content. This content is a little bit longer.
-                                            </b-card-text>
-                                        </b-card-body>
-                                    </b-col>
-                                </b-row>
-                            </b-card>
 
-                        </b-card-group>
-                    </td>
-                </tr>
-                <tr>
-                    <th scope="row">3</th>
-                    <td>
-                        <b-card-group>
-                            <b-card no-body class="overflow-hidden" style="max-width: 540px;">
-                                <b-row no-gutters>
-                                    <b-col md="6">
-                                        <b-card-img src="https://picsum.photos/400/400/?image=20" alt="Image" class="rounded-0"></b-card-img>
-                                    </b-col>
-                                    <b-col md="6">
-                                        <b-card-body title="Horizontal Card">
-                                            <b-card-text>
-                                                This is a wider card with supporting text as a natural lead-in to additional content. This content is a little bit longer.
-                                            </b-card-text>
-                                        </b-card-body>
-                                    </b-col>
-                                </b-row>
-                            </b-card>
-
-                        </b-card-group>
-                    </td>
-                </tr>
             </tbody>
         </table>
 
@@ -83,7 +39,16 @@
 export default {
   name: "ProductsPage",
   components: {},
-  methods: {}
+  data() {
+    return {
+      items: []
+    };
+  },
+  methods: {},
+
+  created: function() {
+    this.items = this.$store.getters["productsStore/getProducts"];
+  }
 };
 </script>
 <style lang="scss" scoped>
