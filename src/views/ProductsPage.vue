@@ -2,7 +2,21 @@
     <div class="page-style">
         <h1>Products</h1>
 
-        <table class="table" v-for="item in items">
+        <div class="row">
+            <div class="col-sm-6" v-for="item in items">
+                <div class="card">
+                    <div class="card-body">
+                        <img class="card-img-top" :src="item.image" style="width:18rem;">
+                        <h5 class="card-title">{{item.nameProduct}}</h5>
+                        <p class="card-text">{{item.description}}</p>
+                        <button class="btn btn-primary">Discover More</button>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- <table class="table" v-for="item in items">
 
             <tbody>
                 <tr>
@@ -28,7 +42,7 @@
                 </tr>
 
             </tbody>
-        </table>
+        </table> -->
 
     </div>
 </template>
