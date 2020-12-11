@@ -1,7 +1,6 @@
 <template>
   <div id="app" class="container">
-    <div class="row">
-
+    <div class="row row-style">
       <div class="col-2 no-padding">
         <navigation-component/>
       </div>
@@ -51,6 +50,7 @@ export default {
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #2c3e50;
+  height: 100%;
 }
 
 .container {
@@ -66,8 +66,12 @@ header {
   background-color: rgb(33, 44, 61);
   border-top: 70px solid rgb(33, 44, 61);
 }
-.row {
+.row-style {
   width: 100%;
+  height: 100%;
+}
+body {
+  height: 100%;
 }
 
 </style>
