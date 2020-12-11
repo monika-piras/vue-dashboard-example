@@ -3,6 +3,7 @@ import VueRouter from 'vue-router'
 import Home from '../views/Home.vue'
 import ContactsPage from '../views/ContactsPage.vue'
 import ProductsPage from '../views/ProductsPage.vue'
+import ItemDetailPage from '../views/ItemDetailPage.vue'
 import UserDetailPage from '../views/UserDetailPage.vue'
 import AddUserPage from '../views/AddUserPage.vue'
 
@@ -20,15 +21,21 @@ const routes = [
     component: ContactsPage
   },
   {
+    path: '/userDetailPage',
+    name: 'userDetailPage',
+    component: UserDetailPage,
+    props: true
+  },
+  {
     path: '/products',
     name: 'ProductsPage',
     component: ProductsPage
   },
   {
-    path: '/userDetailPage',
-    name: 'userDetailPage',
-    component: UserDetailPage,
-    props: true
+    path: '/itemDetailPage',
+    name: 'itemDetailPage',
+    component: ItemDetailPage,
+    // props: true
   },
   {
     path: '/addUserPage',

@@ -2,51 +2,51 @@
     "list": [
       {
         "id": 1,
-        "title": "Computers & Softwares",
-        "category": "technology",
+        "title": "HP - PC 14s-fq0037nl Notebook",
+        "category": "laptop",
         "condition": "new",
-        "description": "LapTops, Tablets, iPadr",
-        "image": "https://picsum.photos/400/400/?image=20"
+        "description": "HP - PC 14s-fq0037nl Notebook, AMD 3020e, RAM 4 GB, eMMC 64 GB, Grafica AMD Radeon, Windows 10 Home S, Schermo 14'' HD SVA, USB-C, HDMI, Webcam TrueVision 720p, RJ-45, Nero",
+        "image": "https://m.media-amazon.com/images/I/8102bJ9WgwL._AC_UL320_.jpg"
       },
       {
         "id": 2,
-        "title": "Electronics & Accessories",
-        "category": "technology",
+        "title": "Samsung Galaxy M51, Smartphone",
+        "category": "smartphone",
         "condition": "new",
-        "description": "TV, DvDs, iPhones",
-        "image": "https://picsum.photos/400/400/?image=20"
+        "description": "Samsung Galaxy M51, Smartphone, Display 6.7'' Super AMOLED Plus, 4 Fotocamere, 128GB Espandibili, RAM 6 GB, Batteria 7000 mAh, 4G, Dual Sim, Android 10, White",
+        "image": "https://m.media-amazon.com/images/I/71tSKZ5-xYL._AC_UL320_.jpg"
       },
       {
         "id": 3,
-        "title": "Toys & Games",
-        "category": "technology",
+        "title": "PlayStation 4 Slim 500GB F Chassis",
+        "category": "games",
         "condition": "new",
-        "description": "Games, Toys, Puzzles",
-        "image": "https://picsum.photos/400/400/?image=20"
+        "description": "PlayStation 4 Slim 500GB F Chassis, Jet Black + 2° Dualshock 4 [Edizione: EU]",
+        "image": "https://m.media-amazon.com/images/I/81kWdfvs9lL._AC_UL320_.jpg"
       },
       {
         "id": 4,
-        "title": "VideoGames",
-        "category": "technology",
+        "title": "LG UHD TV 55UN71006LB.APID",
+        "category": "tv",
         "condition": "new",
-        "description": "Games, PlayStation, XBoxes,",
-        "image": "https://picsum.photos/400/400/?image=20"
+        "description": "LG UHD TV 55UN71006LB.APID, Smart TV 55'', LED 4K IPS Display, Versione 2020 [Classe di efficienza energetica A]",
+        "image": "https://m.media-amazon.com/images/I/71rCWeH1egL._AC_UL320_.jpg"
       },
       {
         "id": 5,
-        "title": "Beauty picks",
-        "category": "technology",
+        "title": "HETOOSHI Tappeto Shaggy",
+        "category": "home",
         "condition": "new",
-        "description": "Assistant Media Planner",
-        "image": "https://picsum.photos/400/400/?image=20"
+        "description": "HETOOSHI Tappeto Shaggy - Tappeto Salotto A Pelo Lungo per Asilo Nido Home Room Decor - in Diversi Colori E Misure（Beige 80 x 120 cm）",
+        "image": "https://m.media-amazon.com/images/I/71Dm0-aVYwL._AC_UL320_.jpg"
       },
       {
         "id": 6,
-        "title": "Shawna",
-        "category": "technology",
+        "title": "Yuson Girl Fiocchi di Neve",
+        "category": "christmas",
         "condition": "new",
-        "description": "Assistant Media Planner",
-        "image": "https://picsum.photos/400/400/?image=20"
+        "description": "Yuson Girl Fiocchi di Neve per Natale Decorazione Albero di Natale da Appendere Pendenti Ornamento per Le Vacanze Festival Partito Home Decorazione Natalizia Ornamenti Appesi",
+        "image": "https://m.media-amazon.com/images/I/81NBjjb5XPL._AC_UL320_.jpg"
       },
       {
         "id": 7,
