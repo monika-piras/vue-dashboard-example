@@ -22,7 +22,9 @@
                     <h6>Condition: <span style="color:green;">New</span> </h6>
                     <h6 style="color:red;">Price: $400</h6>
                     <div>
-                        <button class="btn btn-warning button-style">Add to Cart</button>
+                        <button class="btn btn-warning button-style">
+                            <b-icon icon="cart2" scale="1.5" class="icon-style"></b-icon>
+                        Add to Cart</button>
                     </div>
                 </div>
             </div>
@@ -48,5 +50,8 @@ h4 {
 }
 /deep/.container {
   max-height: 100px !important;
+}
+.icon-style {
+    margin-right: 10px;
 }
 </style>
