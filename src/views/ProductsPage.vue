@@ -38,10 +38,7 @@ export default {
   methods: {
     goToItemDetail(id) {
       this.$router.push("/itemDetailPage/" + id);
-    },
-    //  directDetails(id) {
-    //   this.$router.push("/movieDetails/" + id);
-    // }
+    }
   },
 
   created: function() {
