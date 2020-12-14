@@ -73,6 +73,7 @@ header {
 }
 .button-header-style {
   position: absolute;
+  top: -55px;
   right: 20px;
 }
 .icon-header-style {
