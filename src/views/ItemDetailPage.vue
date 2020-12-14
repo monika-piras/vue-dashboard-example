@@ -1,34 +1,39 @@
 <template>
     <div class="container">
-        <h4> ITEM DETAIL PAGE </h4>
+        <div v-if="productDetail">
+            <h4> ITEM DETAIL PAGE </h4>
+            <div class="row">
+                <div class="col-sm-6">
+                    <div class="card">
+                        <div class="card-body">
+                            <img class="card-img-top" v-bind:src="productDetail.image" style="width:18rem;">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6">
 
-        <div class="row">
-            <div class="col-sm-6">
-                <div class="card">
-                    <div class="card-body">
-                        <img class="card-img-top" src="https://m.media-amazon.com/images/I/8102bJ9WgwL._AC_UL320_.jpg" style="width:18rem;">
+                    <h3 class="card-title">{{productDetail.title}}</h3>
+
+                    <div class="card-content">
+                        <p class="card-text">
+                            {{productDetail.description}}
+                        </p>
+                        <h6>Category: {{productDetail.category}}</h6>
+                        <h6>Condition:
+                            <span style="color:green;">{{productDetail.condition}}</span>
+                        </h6>
+                        <h6 style="color:red;">Price: {{productDetail.price}}</h6>
+                        <div>
+                            <button class="btn btn-warning button-style">
+                                <b-icon icon="cart2" scale="1.5" class="icon-style"></b-icon>
+                                Add to Cart</button>
+                        </div>
                     </div>
                 </div>
             </div>
-            <div class="col-sm-6">
 
-                <h3 class="card-title">HP - PC 14s-fq0037nl Notebook</h3>
-
-                <div class="card-content">
-                    <p class="card-text">
-                        HP - PC 14s-fq0037nl Notebook, AMD 3020e, RAM 4 GB, eMMC 64 GB, Grafica AMD Radeon, Windows 10 Home S, Schermo 14" HD SVA, USB-C, HDMI, Webcam TrueVision 720p, RJ-45, Nero
-                    </p>
-                    <h6>Category: Laptop</h6>
-                    <h6>Condition: <span style="color:green;">New</span> </h6>
-                    <h6 style="color:red;">Price: $400</h6>
-                    <div>
-                        <button class="btn btn-warning button-style">
-                            <b-icon icon="cart2" scale="1.5" class="icon-style"></b-icon>
-                        Add to Cart</button>
-                    </div>
-                </div>
-            </div>
         </div>
+
     </div>
 </template>
 
@@ -41,7 +46,16 @@ export default {
     return {};
   },
   methods: {},
-  computed: {}
+  computed: {
+    paramID() {
+      return this.$route.params.id;
+    },
+    productDetail() {
+      return this.$store.getters["productsStore/getProductDetails"](
+        this.paramID
+      );
+    }
+  }
 };
 </script>
 <style lang="scss" scoped>
@@ -52,6 +66,6 @@ h4 {
   max-height: 100px !important;
 }
 .icon-style {
-    margin-right: 10px;
+  margin-right: 10px;
 }
 </style>

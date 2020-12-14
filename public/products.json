@@ -2,11 +2,12 @@
     "list": [
       {
         "id": 1,
-        "title": "HP - PC 14s-fq0037nl Notebook",
+        "title": "HP - PC 14s-fq0037nl",
         "category": "laptop",
         "condition": "new",
         "description": "HP - PC 14s-fq0037nl Notebook, AMD 3020e, RAM 4 GB, eMMC 64 GB, Grafica AMD Radeon, Windows 10 Home S, Schermo 14'' HD SVA, USB-C, HDMI, Webcam TrueVision 720p, RJ-45, Nero",
-        "image": "https://m.media-amazon.com/images/I/8102bJ9WgwL._AC_UL320_.jpg"
+        "image": "https://m.media-amazon.com/images/I/8102bJ9WgwL._AC_UL320_.jpg",
+        "price": "$400"
       },
       {
         "id": 2,
@@ -14,7 +15,8 @@
         "category": "smartphone",
         "condition": "new",
         "description": "Samsung Galaxy M51, Smartphone, Display 6.7'' Super AMOLED Plus, 4 Fotocamere, 128GB Espandibili, RAM 6 GB, Batteria 7000 mAh, 4G, Dual Sim, Android 10, White",
-        "image": "https://m.media-amazon.com/images/I/71tSKZ5-xYL._AC_UL320_.jpg"
+        "image": "https://m.media-amazon.com/images/I/71tSKZ5-xYL._AC_UL320_.jpg",
+        "price": "$300"
       },
       {
         "id": 3,
@@ -22,7 +24,8 @@
         "category": "games",
         "condition": "new",
         "description": "PlayStation 4 Slim 500GB F Chassis, Jet Black + 2° Dualshock 4 [Edizione: EU]",
-        "image": "https://m.media-amazon.com/images/I/81kWdfvs9lL._AC_UL320_.jpg"
+        "image": "https://m.media-amazon.com/images/I/81kWdfvs9lL._AC_UL320_.jpg",
+        "price": "$450"
       },
       {
         "id": 4,
@@ -30,7 +33,8 @@
         "category": "tv",
         "condition": "new",
         "description": "LG UHD TV 55UN71006LB.APID, Smart TV 55'', LED 4K IPS Display, Versione 2020 [Classe di efficienza energetica A]",
-        "image": "https://m.media-amazon.com/images/I/71rCWeH1egL._AC_UL320_.jpg"
+        "image": "https://m.media-amazon.com/images/I/71rCWeH1egL._AC_UL320_.jpg",
+        "price": "$600"
       },
       {
         "id": 5,
@@ -38,7 +42,8 @@
         "category": "home",
         "condition": "new",
         "description": "HETOOSHI Tappeto Shaggy - Tappeto Salotto A Pelo Lungo per Asilo Nido Home Room Decor - in Diversi Colori E Misure（Beige 80 x 120 cm）",
-        "image": "https://m.media-amazon.com/images/I/71Dm0-aVYwL._AC_UL320_.jpg"
+        "image": "https://m.media-amazon.com/images/I/71Dm0-aVYwL._AC_UL320_.jpg",
+        "price": "$100"
       },
       {
         "id": 6,
@@ -46,7 +51,8 @@
         "category": "christmas",
         "condition": "new",
         "description": "Yuson Girl Fiocchi di Neve per Natale Decorazione Albero di Natale da Appendere Pendenti Ornamento per Le Vacanze Festival Partito Home Decorazione Natalizia Ornamenti Appesi",
-        "image": "https://m.media-amazon.com/images/I/81NBjjb5XPL._AC_UL320_.jpg"
+        "image": "https://m.media-amazon.com/images/I/81NBjjb5XPL._AC_UL320_.jpg",
+        "price": "$80"
       },
       {
         "id": 7,
@@ -54,7 +60,8 @@
         "category": "technology",
         "condition": "new",
         "description": "Assistant Media Planner",
-        "image": "https://picsum.photos/400/400/?image=20"
+        "image": "https://picsum.photos/400/400/?image=20",
+        "price": "$---"
       },
       {
         "id": 8,

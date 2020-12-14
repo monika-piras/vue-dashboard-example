@@ -13,6 +13,11 @@ export default {
     getters: {
         getProducts: (state) => state.allProducts,
 
+        getProductDetails: (state) => (productID) => {
+            const productIndex = state.allProducts.findIndex(x => x.id == productID);
+            return state.allProducts[productIndex];
+        }
+
         // search: (state) => (searchedValue) => {
 
         //     searchedValue = searchedValue.toLowerCase();
@@ -33,7 +38,8 @@ export default {
                     state.allProducts.splice(0, state.allProducts.length);
                     state.allProducts.push(...list);
                 })
-        },
+        }
+       
         // updateUserMutation(state, userParam) {
 
         //     console.log("new user mutation ", userParam);

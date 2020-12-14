@@ -10,11 +10,9 @@
             <h5 class="card-title">{{item.title}}</h5>
 
             <div class="card-content">
-              <!-- <p class="card-text">{{item.description}}</p> -->
-              <!-- <h6>Category: {{item.category}}</h6> -->
               <h6>Condition: {{item.condition}}</h6>
               <div>
-                <button @click="goToItemDetail()" class="btn btn-primary button-style">See More</button>
+                <button @click="goToItemDetail(item.id)" class="btn btn-primary button-style">See More</button>
               </div>
             </div>
           </div>
@@ -38,9 +36,12 @@ export default {
     };
   },
   methods: {
-    goToItemDetail() {
-      this.$router.push('itemDetailPage');
-    }
+    goToItemDetail(id) {
+      this.$router.push("/itemDetailPage/" + id);
+    },
+    //  directDetails(id) {
+    //   this.$router.push("/movieDetails/" + id);
+    // }
   },
 
   created: function() {
