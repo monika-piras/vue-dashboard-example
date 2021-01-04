@@ -4,6 +4,7 @@ import Home from '../views/Home.vue'
 import ContactsPage from '../views/ContactsPage.vue'
 import ProductsPage from '../views/ProductsPage.vue'
 import ItemDetailPage from '../views/ItemDetailPage.vue'
+import AddProductPage from '../views/AddProductPage.vue'
 import UserDetailPage from '../views/UserDetailPage.vue'
 import AddUserPage from '../views/AddUserPage.vue'
 
@@ -36,6 +37,11 @@ const routes = [
     name: 'itemDetailPage',
     component: ItemDetailPage,
     // props: true
+  },
+  {
+    path: '/addProductPage',
+    name: 'AddProductPage',
+    component: AddProductPage
   },
   {
     path: '/addUserPage',

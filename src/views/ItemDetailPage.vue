@@ -24,9 +24,9 @@
                         </h6>
                         <h6 style="color:red;">Price: {{productDetail.price}}</h6>
                         <div>
-                            <button class="btn btn-warning button-style">
-                                <b-icon icon="cart2" scale="1.5" class="icon-style"></b-icon>
-                                Add to Cart</button>
+                            <button class="btn btn-light button-style">
+                                <b-icon icon="pencil" scale="1.5" class="icon-style"></b-icon>
+                                Edit item</button>
                         </div>
                     </div>
                 </div>

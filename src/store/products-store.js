@@ -38,48 +38,30 @@ export default {
                     state.allProducts.splice(0, state.allProducts.length);
                     state.allProducts.push(...list);
                 })
-        }
+        },
        
-        // updateUserMutation(state, userParam) {
+        addProductMutation(state, userParam) {
 
-        //     console.log("new user mutation ", userParam);
-        //     //    console.log(state.allUsers);
-        //     var index = state.allUsers.findIndex((x) => x.id == userParam.id);
-        //     state.allUsers.splice(index, 1, userParam);
-        // },
-        // addUserMutation(state, userParam) {
-
-        //     console.log("add new user mutation ", userParam);
-        //    state.allUsers.push(userParam);
-        // }
+            console.log("add new product mutation ", userParam);
+           state.allProducts.push(userParam);
+        }
     },
 
     actions: {
         loadProducts(context) {
             context.commit('loadProductsMutation');
         },
-        // updateUser(context, userParam) {
-        //     console.log('call action updateUser');
-        //     return new Promise((resolve, reject) => {
-        //         setTimeout(() => {
-        //             context.commit('updateUserMutation', userParam);
-        //             resolve();
-        //             // reject();
-        //         }, 2000);
 
-        //     });
-        // },
+        addProduct(context, userParam) {
+            return new Promise((resolve, reject) => {
+                setTimeout(() => {
+                    context.commit('addProductMutation', userParam);
+                    resolve();
+                    // reject();
+                }, 2000);
 
-        // addUser(context, userParam) {
-        //     return new Promise((resolve, reject) => {
-        //         setTimeout(() => {
-        //             context.commit('addUserMutation', userParam);
-        //             resolve();
-        //             // reject();
-        //         }, 2000);
-
-        //     });
-        // }
+            });
+        }
     },
 
 };

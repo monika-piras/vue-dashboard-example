@@ -6,9 +6,6 @@
       </div>
       <div class="col-10 no-padding">
         <header>
-          <button class="btn button-header-style">
-            <b-icon icon="cart2" scale="1.5" class="icon-header-style"></b-icon>
-          </button>
         </header>
         <router-view/>
       </div>
@@ -69,16 +66,8 @@ export default {
 header {
   background-color: rgb(33, 44, 61);
   border-top: 70px solid rgb(33, 44, 61);
-  position: relative;
 }
-.button-header-style {
-  position: absolute;
-  top: -55px;
-  right: 20px;
-}
-.icon-header-style {
-  color: #fff;
-}
+
 .row-style {
   width: 100%;
   height: 100%;

@@ -2,6 +2,7 @@
   <div class="page-style">
     <h1>Products</h1>
 
+<button @click="addProduct()">Add Product</button>
     <div class="row">
       <div class="col-sm-3" v-for="item in items">
         <div class="card">
@@ -12,7 +13,7 @@
             <div class="card-content">
               <h6>Condition: {{item.condition}}</h6>
               <div>
-                <button @click="goToItemDetail(item.id)" class="btn btn-primary button-style">See More</button>
+                <button @click="goToItemDetail(item.id)" class="btn btn-primary button-style">Description</button>
               </div>
             </div>
           </div>
@@ -38,6 +39,9 @@ export default {
   methods: {
     goToItemDetail(id) {
       this.$router.push("/itemDetailPage/" + id);
+    },
+    addProduct() {
+      this.$router.push("/addProductPage/");
     }
   },
 

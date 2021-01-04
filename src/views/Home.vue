@@ -8,15 +8,20 @@
 
     <!-- <button @click="handleOnclick()">Promise</button> -->
 
-    <div>
-      <h4 class="titleChartStyle">Chart User's Gender</h4>
-      <apexchart @click="handleOnclick()" width="500" type="bar" :options="chartDataBar.chartOptions" :series="chartDataBar.series"></apexchart>
+    <div class="container">
+      <div class="row">
+        <div class="col-sm">
+          <h4 class="titleChartStyle">Chart User's Gender</h4>
+          <apexchart @click="handleOnclick()" width="500" type="bar" :options="chartDataBar.chartOptions" :series="chartDataBar.series"></apexchart>
+        </div>
+        <div class="col-sm">
+          <h4 class="titleChartStyle">Chart User's Age</h4>
+          <apexchart @click="handleOnclick()" width="380" type="donut" :options="chartDataDonut.chartOptions" :series="chartDataDonut.series"></apexchart>
+        </div>
+
+      </div>
     </div>
 
-    <div>
-      <h4 class="titleChartStyle">Chart User's Age</h4>
-      <apexchart @click="handleOnclick()" width="380" type="donut" :options="chartDataDonut.chartOptions" :series="chartDataDonut.series"></apexchart>
-    </div>
     <div>
     </div>
   </div>
@@ -26,7 +31,8 @@
 // @ is an alias to /src
 export default {
   name: "Home",
-  components: {},
+  components: {
+  },
 
   data() {
     return {
@@ -51,7 +57,6 @@ export default {
       return allWomen;
     },
 
-
     ageOver30() {
       var personsList = this.$store.getters["usersStore/getUsers"];
       var usersOver30 = personsList.filter(item => item.age > 30);
@@ -64,7 +69,7 @@ export default {
       var personsList = this.$store.getters["usersStore/getUsers"];
       var usersUnder30 = personsList.filter(item => item.age <= 30);
       var under30 = usersUnder30.length;
-      
+
       return under30;
     },
 
