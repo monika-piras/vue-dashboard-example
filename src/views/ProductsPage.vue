@@ -1,8 +1,14 @@
 <template>
   <div class="page-style">
+    <div class="h1-style">
     <h1>Products</h1>
+    <div>
+<button class="add-button-style" @click="addProduct()">Add Product</button>
 
-<button @click="addProduct()">Add Product</button>
+    </div>
+
+    </div>
+
     <div class="row">
       <div class="col-sm-3" v-for="item in items">
         <div class="card">
@@ -73,6 +79,14 @@ img {
 
 .button-style {
   margin-top: 10px;
+}
+.h1-style {
+  position: relative;;
+}
+.add-button-style {
+    position: absolute;
+    right: 0;
+    top: 0;
 }
 </style>
 

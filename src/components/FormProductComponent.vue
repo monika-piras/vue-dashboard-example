@@ -3,7 +3,7 @@
     <form @submit="checkForm">
 
       <div class="form-group align-left">
-        <label class="left" for="inlineFormInput1">Title&nbsp;
+        <label class="left font-weight-style" for="inlineFormInput1">Title&nbsp;
           <span class="red">&#42;</span>
         </label>
         <input type="text" class="form-control mb-2" id="inlineFormInput1" v-model="title" placeholder="title">
@@ -11,7 +11,7 @@
       </div>
 
       <div class="form-group align-left">
-        <label class="left" for="inlineFormInput2">Description&nbsp;
+        <label class="left font-weight-style" for="inlineFormInput2">Description&nbsp;
           <span class="red">&#42;</span>
         </label>
         <textarea name="message" class="form-control mb-2" id="inlineFormInput2" v-model="description" placeholder="description"></textarea>
@@ -19,7 +19,7 @@
       </div>
 
       <div class="text-left mb-3">
-        <div class="form-group align-left">
+        <div class="form-group align-left font-weight-style">
           Category
         </div>
         <div class="form-group form-check inline align-left">
@@ -34,23 +34,23 @@
           <input type="checkbox" class="form-check-input" id="tv" value="tv" v-model="checkedCategories">
           <label for="adventure" class="form-check-label">TV</label>
         </div>
-         <div class="form-group form-check inline align-left">
+        <div class="form-group form-check inline align-left">
           <input type="checkbox" class="form-check-input" id="home" value="home" v-model="checkedCategories">
           <label for="adventure" class="form-check-label">Home</label>
         </div>
-         <div class="form-group form-check inline align-left">
+        <div class="form-group form-check inline align-left">
           <input type="checkbox" class="form-check-input" id="christmas" value="christmas" v-model="checkedCategories">
           <label for="adventure" class="form-check-label">Christmas</label>
         </div>
       </div>
 
       <div class="form-group align-left">
-        <label class="left" for="inlineFormInput2">Price</label>
+        <label class="left font-weight-style" for="inlineFormInput2">Price</label>
         <textarea name="message" class="form-control mb-2" id="inlineFormInput2" v-model="price" placeholder="price"></textarea>
       </div>
 
       <div class="form-group align-left">
-        <label for="inlineFormInput5">Image&nbsp;
+        <label for="inlineFormInput5" class="font-weight-style">Image&nbsp;
           <span class="red">&#42;</span>
         </label>
         <div class="input-image-display">
@@ -63,9 +63,14 @@
       </div>
 
       <!-- Default switch -->
-      <div class="form-group align-left custom-control custom-switch ">
+      <h6 class="text-left font-weight-style">Condition</h6>
+      <div class="form-group align-left custom-control custom-switch">
+
         <input type="checkbox" class="custom-control-input" id="customSwitches" v-model="condition">
-        <label class="custom-control-label" for="customSwitches">NEW</label>
+
+        <label class="custom-control-label" for="customSwitches" v-if="condition">NEW</label>
+        <label class="custom-control-label" for="customSwitches" v-else>USED</label>
+
       </div>
 
       <div class="col-auto">
@@ -92,7 +97,7 @@ export default {
       isErrorDescription: false,
       checkedCategories: [],
       price: null,
-      condition: false,
+      condition: true,
       image: null,
       isErrorImage: false,
       imageBase64: null,
@@ -224,5 +229,12 @@ export default {
 
 .red {
   color: red;
+}
+
+.text-left {
+  text-align: left;
+}
+.font-weight-style {
+  font-weight: 700;
 }
 </style>
