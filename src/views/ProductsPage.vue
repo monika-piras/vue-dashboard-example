@@ -3,7 +3,7 @@
     <div class="h1-style">
     <h1>Products</h1>
     <div>
-<button class="add-button-style" @click="addProduct()">Add Product</button>
+<button class=" btn btn-secondary add-button-style" @click="addProduct()">Add Product</button>
 
     </div>
 
