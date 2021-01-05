@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="margin-page-style">
 
     <div class="text-center" v-if="isLoading">
       <b-spinner variant="primary" label="Text Centered"></b-spinner>
@@ -7,7 +7,7 @@
 
     <b-form @submit="onSubmit" v-else>
 
-      <b-form-group label-cols-sm="3" id="input-group-2" label="Name:" label-for="input-2">
+      <b-form-group label-cols-sm="3" class="font-weight-style" id="input-group-2" label="Name:" label-for="input-2">
         <b-form-input id="input-2" v-model="form.fname" :state="validationName" required placeholder="Enter name"></b-form-input>
 
         <b-form-invalid-feedback :state="validationName">
@@ -16,7 +16,7 @@
 
       </b-form-group>
 
-      <b-form-group label-cols-sm="3" id="input-group-2" label="Surname:" label-for="input-2b">
+      <b-form-group label-cols-sm="3" class="font-weight-style" id="input-group-2" label="Surname:" label-for="input-2b">
         <b-form-input id="input-2b" v-model="form.lname" :state="validationSurname" required placeholder="Enter Surname"></b-form-input>
 
         <b-form-invalid-feedback :state="validationSurname">
@@ -25,7 +25,7 @@
 
       </b-form-group>
 
-      <b-form-group label-cols-sm="3" id="input-group-1" label="Email address:" label-for="input-1" description="We'll never share your email with anyone else.">
+      <b-form-group label-cols-sm="3" class="font-weight-style" id="input-group-1" label="Email address:" label-for="input-1" description="We'll never share your email with anyone else.">
         <b-form-input id="input-1" v-model="form.email" :state="validationEmail" type="email" required placeholder="Enter email"></b-form-input>
 
         <b-form-invalid-feedback :state="validationEmail">
@@ -34,10 +34,13 @@
 
       </b-form-group>
 
-      <b-form-group label-cols-sm="3" label="Gender:">
+      <b-form-group class="mt-2 font-weight-style" label="Gender:">
         <b-form-radio-group class="pt-2" v-model="form.gender">
-          <b-form-radio name="some-radios" value="male">Male</b-form-radio>
-          <b-form-radio name="some-radios" value="female">Female</b-form-radio>
+          <span class="font-weight-radio">
+            <b-form-radio name="some-radios" value="male">Male</b-form-radio>
+            <b-form-radio name="some-radios" value="female">Female</b-form-radio>
+          </span>
+
         </b-form-radio-group>
       </b-form-group>
 
@@ -167,8 +170,28 @@ export default {
 };
 </script>
 <style lang="scss" scoped>
-/deep/ .form-row > .col,
-.form-row > [class*="col-"] {
+//
+.margin-page-style {
+  margin: 15px;
+}
+.font-weight-style {
+  font-weight: 700;
+}
+.font-weight-radio {
+  font-weight: 400;
+}
+.form-row {
+  display: block;
+  margin: 0;
+}
+/deep/.col-form-label {
+  float: left;
+  text-align: left;
+}
+.invalid-feedback {
+  margin: 0.5rem;
+}
+.bv-no-focus-ring {
   text-align: left;
 }
 </style>
