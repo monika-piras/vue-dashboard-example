@@ -73,7 +73,7 @@ export default {
 
     if (this.user) {
       this.fillForm();
-    }
+    } 
   },
   methods: {
     fillForm() {
@@ -82,6 +82,12 @@ export default {
         (this.form.email = this.user.email),
         (this.form.gender = this.user.gender);
     },
+    // resetErrors() {
+    //   this.validationName = true;
+    //   this.validationSurname = true;
+    //   this.validationEmail = true;
+    // },
+    
     onSubmit(evt) {
       if (
         this.validationName &&

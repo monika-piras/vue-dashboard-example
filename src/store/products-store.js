@@ -39,11 +39,15 @@ export default {
                     state.allProducts.push(...list);
                 })
         },
-       
-        addProductMutation(state, userParam) {
 
-            console.log("add new product mutation ", userParam);
-           state.allProducts.push(userParam);
+        addProductMutation(state, productParam) {
+            console.log("add new product mutation ", productParam);
+            state.allProducts.push(productParam);
+        },
+
+        editProductMutation(state, productParam) {
+            var index = state.allProducts.findIndex((x) => x.id == productParam.id);
+            state.allProducts.splice(index, 1, productParam);
         }
     },
 
@@ -52,16 +56,25 @@ export default {
             context.commit('loadProductsMutation');
         },
 
-        addProduct(context, userParam) {
+        addProduct(context, productParam) {
             return new Promise((resolve, reject) => {
                 setTimeout(() => {
-                    context.commit('addProductMutation', userParam);
+                    context.commit('addProductMutation', productParam);
                     resolve();
                     // reject();
                 }, 2000);
+            });
+        },
 
+        editProduct(context, productParam) {
+            return new Promise((resolve, reject) => {
+                setTimeout(() => {
+                    context.commit('editProductMutation', productParam);
+                    resolve();
+                    // reject();
+                }, 2000);
             });
         }
-    },
 
+    }
 };

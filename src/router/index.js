@@ -40,7 +40,7 @@ const routes = [
     // props: true
   },
   {
-    path: '/editItemPage/',
+    path: '/editItemPage/:id',
     name: 'editItemPage',
     component: EditItemPage,
     // props: true

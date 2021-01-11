@@ -24,7 +24,7 @@
                         </h6>
                         <h6 style="color:red;">Price: {{productDetail.price}}</h6>
                         <div>
-                            <button @click="editItem()" class="btn btn-light button-style">
+                            <button @click="editItem(productDetail.id)" class="btn btn-light button-style">
                                 <b-icon icon="pencil" scale="1.5" class="icon-style"></b-icon>
                                 Edit item</button>
                         </div>
@@ -46,8 +46,8 @@ export default {
     return {};
   },
   methods: {
-    editItem() {
-      this.$router.push("/editItemPage/");
+    editItem(id) {
+      this.$router.push("/editItemPage/" + id);
     }
   },
   computed: {
