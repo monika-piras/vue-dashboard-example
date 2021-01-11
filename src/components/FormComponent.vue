@@ -8,27 +8,27 @@
     <b-form @submit="onSubmit" v-else>
 
       <b-form-group label-cols-sm="3" class="font-weight-style" id="input-group-2" label="Name:" label-for="input-2">
-        <b-form-input id="input-2" v-model="form.fname" :state="validationName" required placeholder="Enter name"></b-form-input>
+        <b-form-input id="input-2" v-model="form.fname" :state="isFormNameValid" placeholder="Enter name"></b-form-input>
 
-        <b-form-invalid-feedback :state="validationName">
+        <b-form-invalid-feedback :state="isFormNameValid">
           Your Name must be 2-20 characters long.
         </b-form-invalid-feedback>
 
       </b-form-group>
 
       <b-form-group label-cols-sm="3" class="font-weight-style" id="input-group-2" label="Surname:" label-for="input-2b">
-        <b-form-input id="input-2b" v-model="form.lname" :state="validationSurname" required placeholder="Enter Surname"></b-form-input>
+        <b-form-input id="input-2b" v-model="form.lname" :state="isFormSurnameValid" placeholder="Enter Surname"></b-form-input>
 
-        <b-form-invalid-feedback :state="validationSurname">
+        <b-form-invalid-feedback :state="isFormSurnameValid">
           Your Surname ID must be 2-20 characters long.
         </b-form-invalid-feedback>
 
       </b-form-group>
 
       <b-form-group label-cols-sm="3" class="font-weight-style" id="input-group-1" label="Email address:" label-for="input-1" description="We'll never share your email with anyone else.">
-        <b-form-input id="input-1" v-model="form.email" :state="validationEmail" type="email" required placeholder="Enter email"></b-form-input>
-
-        <b-form-invalid-feedback :state="validationEmail">
+        <b-form-input id="input-1" v-model="form.email" :state="isFormEmailValid" type="email" placeholder="Enter email"></b-form-input>
+        {{isFormEmailValid}} {{validationEmail}}
+        <b-form-invalid-feedback :state="isFormEmailValid">
           Your Email is incorrect.
         </b-form-invalid-feedback>
 
@@ -59,6 +59,7 @@ export default {
   data() {
     return {
       isLoading: false,
+      isSubmitted: false,
 
       form: {
         fname: "",
@@ -73,7 +74,7 @@ export default {
 
     if (this.user) {
       this.fillForm();
-    } 
+    }
   },
   methods: {
     fillForm() {
@@ -82,13 +83,11 @@ export default {
         (this.form.email = this.user.email),
         (this.form.gender = this.user.gender);
     },
-    // resetErrors() {
-    //   this.validationName = true;
-    //   this.validationSurname = true;
-    //   this.validationEmail = true;
-    // },
-    
+
     onSubmit(evt) {
+      evt.preventDefault();
+      this.isSubmitted = true;
+
       if (
         this.validationName &&
         this.validationSurname &&
@@ -156,12 +155,11 @@ export default {
             });
         }
       }
-
-      evt.preventDefault();
     }
   },
 
   computed: {
+    
     validationName() {
       return this.form.fname.length > 1 && this.form.fname.length <= 20;
     },
@@ -171,6 +169,20 @@ export default {
     validationEmail() {
       var re = /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
       return re.test(this.form.email);
+    },
+    
+    isFormNameValid() {
+      return !this.isSubmitted && !this.form.fname ? null : this.validationName;
+    },
+    isFormSurnameValid() {
+      return !this.isSubmitted && !this.form.lname
+        ? null
+        : this.validationSurname;
+    },
+    isFormEmailValid() {
+      return !this.isSubmitted && !this.form.email
+        ? null
+        : this.validationEmail;
     }
   }
 };
