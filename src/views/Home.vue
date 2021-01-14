@@ -4,11 +4,11 @@
     <div class="container">
       <div class="row">
         <div class="col-sm">
-          <h4 class="titleChartStyle">Chart User's Gender</h4>
+          <h4 class="titleChartStyle">User's Gender</h4>
           <apexchart width="500" type="bar" :options="chartDataBar.chartOptions" :series="chartDataBar.series"></apexchart>
         </div>
         <div class="col-sm">
-          <h4 class="titleChartStyle">Chart User's Age</h4>
+          <h4 class="titleChartStyle">User's Age</h4>
           <apexchart width="380" type="donut" :options="chartDataDonut.chartOptions" :series="chartDataDonut.series"></apexchart>
         </div>
 

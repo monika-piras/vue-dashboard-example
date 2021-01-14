@@ -74,4 +74,11 @@ nav {
 .nav-item {
   text-align: left;
 }
+
+@media only screen and (max-width: 992px) {
+
+}
+@media only screen and (max-width: 576px) {
+  
+}
 </style>

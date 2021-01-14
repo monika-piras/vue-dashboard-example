@@ -195,7 +195,7 @@ export default {
           .then(response => {
             this.$root.$bvToast.toast("Product successfully updated", {
               title: `Success`,
-              variant: "primary",
+              variant: "success",
               solid: true
             });
             this.$router.push("/products/");
@@ -225,7 +225,7 @@ export default {
           .then(response => {
             this.$root.$bvToast.toast("Product successfully updated", {
               title: `Success`,
-              variant: "primary",
+              variant: "success",
               solid: true
             });
             this.$router.push("/products/");
