@@ -5,7 +5,7 @@
         <navigation-component/>
       </div>
       <div class="col-10 no-padding">
-        <header>
+        <header class="headerStyle">
         </header>
         <router-view/>
       </div>
@@ -22,6 +22,7 @@ import VueMaterial from "vue-material";
 import "vue-material/dist/vue-material.min.css";
 import "vue-material/dist/theme/default.css";
 import VueApexCharts from "vue-apexcharts";
+
 
 Vue.use(BootstrapVue);
 Vue.use(BootstrapVueIcons);
@@ -63,7 +64,7 @@ export default {
 .no-padding {
   padding: 0px;
 }
-header {
+.headerStyle {
   background-color: rgb(33, 44, 61);
   border-top: 70px solid rgb(33, 44, 61);
 }

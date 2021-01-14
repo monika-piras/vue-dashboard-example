@@ -108,7 +108,7 @@ export default {
             .then(response => {
               this.$root.$bvToast.toast("Contact successfully updated", {
                 title: `Success`,
-                variant: "success",
+                variant: "primary",
                 solid: true
               });
               this.$router.push("contacts");
@@ -137,7 +137,7 @@ export default {
             .then(response => {
               this.$root.$bvToast.toast("Contact successfully added", {
                 title: `Success`,
-                variant: "success",
+                variant: "primary",
                 solid: true
               });
               this.$router.push("contacts");
