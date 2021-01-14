@@ -4,7 +4,7 @@
         "id": 1,
         "title": "HP - PC 14s-fq0037nl",
         "category": "laptop",
-        "condition": "new",
+        "condition": true,
         "description": "HP - PC 14s-fq0037nl Notebook, AMD 3020e, RAM 4 GB, eMMC 64 GB, Grafica AMD Radeon, Windows 10 Home S, Schermo 14'' HD SVA, USB-C, HDMI, Webcam TrueVision 720p, RJ-45, Nero",
         "image": "/img/pc.jpg",
         "price": "$400"
@@ -13,7 +13,7 @@
         "id": 2,
         "title": "Samsung Galaxy M51, Smartphone",
         "category": "smartphone",
-        "condition": "new",
+        "condition": true,
         "description": "Samsung Galaxy M51, Smartphone, Display 6.7'' Super AMOLED Plus, 4 Fotocamere, 128GB Espandibili, RAM 6 GB, Batteria 7000 mAh, 4G, Dual Sim, Android 10, White",
         "image": "/img/samsung.jpg",
         "price": "$300"
@@ -22,7 +22,7 @@
         "id": 3,
         "title": "PlayStation 4 Slim 500GB",
         "category": "games",
-        "condition": "new",
+        "condition": true,
         "description": "PlayStation 4 Slim 500GB F Chassis, Jet Black + 2° Dualshock 4 [Edizione: EU]",
         "image": "/img/ps4.jpg",
         "price": "$450"
@@ -31,7 +31,7 @@
         "id": 4,
         "title": "LG UHD TV",
         "category": "tv",
-        "condition": "new",
+        "condition": true,
         "description": "LG UHD TV 55UN71006LB.APID, Smart TV 55'', LED 4K IPS Display, Versione 2020 [Classe di efficienza energetica A]",
         "image": "/img/lgTv.jpg",
         "price": "$600"
@@ -40,7 +40,7 @@
         "id": 5,
         "title": "HETOOSHI Tappeto Shaggy",
         "category": "home",
-        "condition": "new",
+        "condition": true,
         "description": "HETOOSHI Tappeto Shaggy - Tappeto Salotto A Pelo Lungo per Asilo Nido Home Room Decor - in Diversi Colori E Misure（Beige 80 x 120 cm）",
         "image": "/img/shaggy.jpg",
         "price": "$100"
@@ -49,7 +49,7 @@
         "id": 6,
         "title": "Yuson Girl Fiocchi di Neve",
         "category": "christmas",
-        "condition": "new",
+        "condition": true,
         "description": "Yuson Girl Fiocchi di Neve per Natale Decorazione Albero di Natale da Appendere Pendenti Ornamento per Le Vacanze Festival Partito Home Decorazione Natalizia Ornamenti Appesi",
         "image": "/img/yusonFiocchi.jpg",
         "price": "$80"
@@ -58,7 +58,7 @@
         "id": 7,
         "title": "Title",
         "category": "technology",
-        "condition": "new",
+        "condition": true,
         "description": "...............................",
         "image": "/img/technology.jpg",
         "price": "$---"
@@ -67,7 +67,7 @@
         "id": 8,
         "title": "Title",
         "category": "technology",
-        "condition": "new",
+        "condition": true,
         "description": "................................",
         "image": "/img/smartphone.jpg"
       },
@@ -75,7 +75,7 @@
         "id": 9,
         "title": "Title",
         "category": "technology",
-        "condition": "new",
+        "condition": true,
         "description": "...................................",
         "image": "https://picsum.photos/400/400/?image=20"
       },
@@ -83,7 +83,7 @@
         "id": 10,
         "title": "Title",
         "category": "technology",
-        "condition": "new",
+        "condition": true,
         "description": "........................................",
         "image": "https://picsum.photos/400/400/?image=20"
       },
@@ -91,7 +91,7 @@
         "id": 11,
         "title": "Title",
         "category": "technology",
-        "condition": "new",
+        "condition": true,
         "description": "..........................................",
         "image": "https://picsum.photos/400/400/?image=20"
       }

@@ -3,7 +3,7 @@
     <div class="h1-style">
     <h1>Products</h1>
     <div>
-<button class=" btn btn-secondary add-button-style" @click="addProduct()">Add Product</button>
+<button class=" btn btn-primary add-button-style" @click="addProduct()">Add Product</button>
 
     </div>
 
@@ -17,9 +17,10 @@
             <h5 class="card-title">{{item.title}}</h5>
 
             <div class="card-content">
-              <h6>Condition: {{item.condition}}</h6>
+              <h6>Condition: {{item.condition ? "new" : "used"}}</h6>
+              <span></span>
               <div>
-                <button @click="goToItemDetail(item.id)" class="btn btn-primary button-style">Description</button>
+                <button @click="goToItemDetail(item.id)" class="btn btn-outline-primary button-style">Description</button>
               </div>
             </div>
           </div>

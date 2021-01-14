@@ -1,9 +1,12 @@
 <template>
   <div class="container">
+    <div class="margin-page-style">
 
-    <h4>ADD USER PAGE</h4>
+      <h4>ADD USER PAGE</h4>
 
-   <form-component/>
+      <form-component/>
+      
+    </div>
 
   </div>
 </template>
@@ -16,8 +19,7 @@ export default {
   name: "AddUserPage",
   components: {
     FormComponent
-  },
- 
+  }
 };
 </script>
 <style lang="scss" scoped>
@@ -41,6 +43,9 @@ h4 {
 
 /deep/.container {
   max-height: 100px !important;
+}
+.margin-page-style {
+  margin: 15px;
 }
 </style>
 

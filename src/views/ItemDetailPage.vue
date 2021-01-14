@@ -20,11 +20,11 @@
                         </p>
                         <h6>Category: {{productDetail.category}}</h6>
                         <h6>Condition:
-                            <span style="color:green;">{{productDetail.condition}}</span>
+                            <span style="color:green;">{{productDetail.condition ? "new" : "used"}}</span>
                         </h6>
                         <h6 style="color:red;">Price: {{productDetail.price}}</h6>
                         <div>
-                            <button @click="editItem(productDetail.id)" class="btn btn-light button-style">
+                            <button @click="editItem(productDetail.id)" class="btn btn-primary button-style">
                                 <b-icon icon="pencil" scale="1.5" class="icon-style"></b-icon>
                                 Edit item</button>
                         </div>

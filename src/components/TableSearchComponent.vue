@@ -24,7 +24,7 @@
          <md-table-cell md-label="Person Age" md-sort-by="age">{{ item.age }}</md-table-cell>
         <!-- <md-table-cell md-label="Job Title" md-sort-by="title">{{ item.title }}</md-table-cell> -->
         <md-table-cell md-label="" md-sort-by="">
-          <button type="button" class="btn btn-outline-secondary btn-sm" v-on:click="edit(item)">Edit</button>
+          <button type="button" class="btn btn-outline-primary btn-sm" v-on:click="edit(item)">Edit</button>
         </md-table-cell>
       </md-table-row>
     </md-table>

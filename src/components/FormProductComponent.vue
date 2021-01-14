@@ -1,6 +1,10 @@
 <template>
   <div>
-    <form @submit="checkForm">
+    <div class="text-center" v-if="isLoading">
+      <b-spinner variant="primary" label="Text Centered"></b-spinner>
+    </div>
+
+    <form @submit="checkForm" v-else>
 
       <div class="form-group align-left">
         <label class="left font-weight-style" for="inlineFormInput1">Title&nbsp;
@@ -17,7 +21,7 @@
         <textarea name="message" class="form-control mb-2" id="inlineFormInput2" v-model="description" placeholder="description"></textarea>
         <div class="text-red-style" v-if="isErrorDescription">Description required.</div>
       </div>
-<!-- 
+      <!-- 
       <div class="text-left mb-3">
         <div class="form-group align-left font-weight-style">
           Category
@@ -87,13 +91,14 @@
 <script>
 export default {
   name: "FormProductComponent",
-  components: {
-  },
+  components: {},
   props: {
     editItem: Object
   },
   data: function() {
     return {
+      isLoading: false,
+
       title: this.editItem ? this.editItem.title : null,
       isErrorTitle: false,
       description: this.editItem ? this.editItem.description : null,
@@ -131,6 +136,7 @@ export default {
       if (this.isFormInvalid()) {
         return;
       }
+      this.isLoading = true;
       this.save();
       this.resetForm();
     },
@@ -178,18 +184,32 @@ export default {
         var updateProduct = {
           title: this.title,
           description: this.description,
-          category: 'games',
+          category: "games",
           price: this.price,
           condition: this.condition,
-          image: this.imageString
-            ? this.imageString
-            : this.imageBase64,
+          image: this.imageString ? this.imageString : this.imageBase64,
           id: this.editItem.id
         };
-        this.$store.dispatch("productsStore/editProduct", updateProduct).then((data)=>{
-          this.$router.push("/products/");
-        });
-        
+        this.$store
+          .dispatch("productsStore/editProduct", updateProduct)
+          .then(response => {
+            this.$root.$bvToast.toast("Product successfully updated", {
+              title: `Success`,
+              variant: "primary",
+              solid: true
+            });
+            this.$router.push("/products/");
+          })
+          .catch(err => {
+            this.isLoading = false;
+
+            this.$root.$bvToast.toast("Error updating Product", {
+              title: `Error`,
+              variant: "warning",
+              solid: true
+            });
+            console.error("Error updating Product");
+          });
       } else {
         var product = {
           title: this.title,
@@ -200,8 +220,26 @@ export default {
           image: this.imageString ? this.imageString : this.imageBase64,
           id: this.id
         };
-        this.$store.dispatch("productsStore/addProduct", product);
-        this.$router.push("/products/");
+        this.$store
+          .dispatch("productsStore/addProduct", product)
+          .then(response => {
+            this.$root.$bvToast.toast("Product successfully updated", {
+              title: `Success`,
+              variant: "primary",
+              solid: true
+            });
+            this.$router.push("/products/");
+          })
+          .catch(err => {
+            this.isLoading = false;
+
+            this.$root.$bvToast.toast("Error updating Product", {
+              title: `Error`,
+              variant: "warning",
+              solid: true
+            });
+            console.error("Error updating Product");
+          });
       }
     }
   }

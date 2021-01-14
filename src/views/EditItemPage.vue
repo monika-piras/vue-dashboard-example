@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="margin-page-style">
       <h3>Edit Item Page</h3>
       <form-product-component v-if="this.productEditDetail" v-bind:editItem="this.productEditDetail"/>
   </div>
@@ -29,6 +29,8 @@ computed: {
 </script>
 
 <style lang="scss" scoped>
-
+.margin-page-style {
+  margin: 15px;
+}
 </style>
 

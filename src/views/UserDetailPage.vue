@@ -1,8 +1,11 @@
 <template>
   <div class="container">
-    <h4> USER DETAIL PAGE </h4>
+    <div class="margin-page-style">
+      <h4> USER DETAIL PAGE </h4>
 
-    <form-component v-if="this.user" v-bind:user="this.user" />
+      <form-component v-if="this.user" v-bind:user="this.user" />
+      
+    </div>
   </div>
 </template>
 
@@ -22,9 +25,9 @@ export default {
   },
   created() {
     this.user = this.$route.params.paramUser;
-    
-    if(this.user == null){
-      return this.$router.push('contacts');
+
+    if (this.user == null) {
+      return this.$router.push("contacts");
     }
   },
   methods: {},
@@ -37,5 +40,8 @@ h4 {
 }
 /deep/.container {
   max-height: 100px !important;
+}
+.margin-page-style {
+  margin: 15px;
 }
 </style>

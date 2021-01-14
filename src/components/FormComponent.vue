@@ -1,5 +1,5 @@
 <template>
-  <div class="margin-page-style">
+  <div>
 
     <div class="text-center" v-if="isLoading">
       <b-spinner variant="primary" label="Text Centered"></b-spinner>
@@ -27,7 +27,6 @@
 
       <b-form-group label-cols-sm="3" class="font-weight-style" id="input-group-1" label="Email address:" label-for="input-1" description="We'll never share your email with anyone else.">
         <b-form-input id="input-1" v-model="form.email" :state="isFormEmailValid" type="email" placeholder="Enter email"></b-form-input>
-        {{isFormEmailValid}} {{validationEmail}}
         <b-form-invalid-feedback :state="isFormEmailValid">
           Your Email is incorrect.
         </b-form-invalid-feedback>
@@ -79,9 +78,9 @@ export default {
   methods: {
     fillForm() {
       (this.form.fname = this.user.name),
-        (this.form.lname = this.user.surname),
-        (this.form.email = this.user.email),
-        (this.form.gender = this.user.gender);
+      (this.form.lname = this.user.surname),
+      (this.form.email = this.user.email),
+      (this.form.gender = this.user.gender);
     },
 
     onSubmit(evt) {
@@ -188,10 +187,7 @@ export default {
 };
 </script>
 <style lang="scss" scoped>
-//
-.margin-page-style {
-  margin: 15px;
-}
+
 .font-weight-style {
   font-weight: 700;
 }
