@@ -1,11 +1,14 @@
 <template>
   <div id="app" class="container">
     <div class="row row-style">
-      <div class="col-2 no-padding">
+      <div class="col-sm-2 d-none d-sm-block no-padding">
         <navigation-component/>
       </div>
-      <div class="col-10 no-padding">
+      <div class="col-xs-12 col-sm-10 no-padding">
         <header class="headerStyle">
+          <!-- only mobile -->
+          <div class="d-block d-sm-none">
+          button menu</div>
         </header>
         <router-view/>
       </div>
@@ -72,6 +75,7 @@ export default {
 .row-style {
   width: 100%;
   height: 100%;
+  margin: 0;
 }
 body {
   height: 100%;
