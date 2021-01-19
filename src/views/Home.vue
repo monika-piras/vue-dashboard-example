@@ -27,9 +27,13 @@ export default {
   components: {},
 
   data() {
-    return {};
+    return {
+      isActive: true,
+      showDiv:false
+    };
   },
-  methods: {},
+  methods: {
+  },
   computed: {
     men() {
       var personsList = this.$store.getters["usersStore/getUsers"];
@@ -132,5 +136,18 @@ export default {
 .titleChartStyle {
   margin: 30px 0 40px 0;
   text-transform: uppercase;
+}
+.div{
+  width: 100px;
+  height: 100px;
+  display: inline-block;
+  border: 1px solid black;
+}
+.yellow{
+  background: yellow;
+}
+
+.orange{
+  background: orange;
 }
 </style>

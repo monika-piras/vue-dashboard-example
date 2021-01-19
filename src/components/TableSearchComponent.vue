@@ -21,7 +21,7 @@
         <md-table-cell md-label="Surname" md-sort-by="surname">{{ item.surname }}</md-table-cell>
         <!-- <md-table-cell md-label="Email" md-sort-by="email">{{ item.email }}</md-table-cell> -->
         <md-table-cell md-label="Gender" md-sort-by="gender">{{ item.gender }}</md-table-cell>
-         <md-table-cell md-label="Person Age" md-sort-by="age">{{ item.age }}</md-table-cell>
+        <md-table-cell class="hiddenOnMobile" md-label="Person Age" md-sort-by="age">{{ item.age }}</md-table-cell>
         <!-- <md-table-cell md-label="Job Title" md-sort-by="title">{{ item.title }}</md-table-cell> -->
         <md-table-cell md-label="" md-sort-by="">
           <button type="button" class="btn btn-outline-primary btn-sm" v-on:click="edit(item)">Edit</button>
@@ -32,7 +32,6 @@
 </template>
 
 <script>
-
 export default {
   name: "TableSearchComponent",
   data: () => ({
@@ -47,13 +46,12 @@ export default {
       this.searched = this.$store.getters["usersStore/search"](this.search);
     },
     edit(paramUser) {
-      this.$router.push({ name: 'userDetailPage', params: {paramUser}});
+      this.$router.push({ name: "userDetailPage", params: { paramUser } });
     }
   },
   created: function() {
     this.searched = this.$store.getters["usersStore/getUsers"];
-  },
-
+  }
 };
 </script>
 
@@ -62,7 +60,7 @@ export default {
   max-width: 300px;
 }
 
- /deep/ .md-table-head,
+/deep/ .md-table-head,
 .md-numeric {
   text-align: center;
 }
@@ -73,6 +71,9 @@ export default {
   height: 100% !important;
   max-height: 100% !important;
 }
-
-
+@media only screen and (max-width: 992px) {
+  .hiddenOnMobile {
+    display: none;
+  }
+}
 </style>

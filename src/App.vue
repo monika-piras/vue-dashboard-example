@@ -1,14 +1,15 @@
 <template>
   <div id="app" class="container">
     <div class="row row-style">
-      <div class="col-sm-2 d-none d-sm-block no-padding">
+      <div class="col-sm-2  d-sm-block no-padding">
+        <!-- d-none -->
         <navigation-component/>
       </div>
       <div class="col-xs-12 col-sm-10 no-padding">
         <header class="headerStyle">
           <!-- only mobile -->
-          <div class="d-block d-sm-none">
-          button menu</div>
+          <!-- <div class="d-block d-sm-none">
+          button menu</div> -->
         </header>
         <router-view/>
       </div>
@@ -79,5 +80,12 @@ export default {
 }
 body {
   height: 100%;
+}
+
+@media only screen and (max-width: 992px) {
+
+  // .headerStyle {
+  //   display: none;
+  // }
 }
 </style>
