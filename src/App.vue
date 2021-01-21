@@ -1,16 +1,39 @@
 <template>
   <div id="app" class="container">
-    <div class="row row-style">
-      <div class="col-sm-2  d-sm-block no-padding">
-        <!-- d-none -->
+    <div class="row no-margin">
+      <div class="col-12 paddingCol-style">
+        <header class="headerStyle">
+          <router-link to="/" class="navbar-brand">VUE DASHBOARD</router-link>
+          <!-- only mobile -->
+          <div class="d-block d-sm-none">
+
+            <div class="buttonMenuStyle">
+              <b-button v-b-toggle.sidebar-backdrop>
+                <b-icon-justify></b-icon-justify>
+                <b-icon-list></b-icon-list>
+                <b-icon-three-dots-vertical></b-icon-three-dots-vertical>
+              </b-button>
+
+              <b-sidebar id="sidebar-backdrop" title="Sidebar with backdrop" backdrop shadow>
+                <div class="px-3 py-2">
+                  <b-form-group>
+
+                    <navigation-component/>
+
+                  </b-form-group>
+                </div>
+              </b-sidebar>
+            </div>
+
+          </div>
+        </header>
+      </div>
+    </div>
+    <div class="row row-full-height no-margin">
+      <div class="col-sm-2 d-none d-sm-block no-padding">
         <navigation-component/>
       </div>
       <div class="col-xs-12 col-sm-10 no-padding">
-        <header class="headerStyle">
-          <!-- only mobile -->
-          <!-- <div class="d-block d-sm-none">
-          button menu</div> -->
-        </header>
         <router-view/>
       </div>
     </div>
@@ -26,7 +49,6 @@ import VueMaterial from "vue-material";
 import "vue-material/dist/vue-material.min.css";
 import "vue-material/dist/theme/default.css";
 import VueApexCharts from "vue-apexcharts";
-
 
 Vue.use(BootstrapVue);
 Vue.use(BootstrapVueIcons);
@@ -65,27 +87,37 @@ export default {
   padding: 0;
   margin: 0;
 }
+
 .no-padding {
   padding: 0px;
 }
-.headerStyle {
-  background-color: rgb(33, 44, 61);
-  border-top: 70px solid rgb(33, 44, 61);
+
+.no-margin {
+  margin: 0;
 }
 
-.row-style {
-  width: 100%;
+.paddingCol-style {
+  padding: 0;
+}
+.headerStyle {
+  text-align: left;
+  background-color: rgb(33, 44, 61);
+  border-top: 10px solid rgb(33, 44, 61);
+  position: relative;
+}
+.buttonMenuStyle {
+  position: absolute;
+  top: 5px;
+  right: 7px;
+}
+.navbar-brand {
+  margin: 10px;
+}
+.row-full-height {
   height: 100%;
-  margin: 0;
 }
 body {
   height: 100%;
 }
 
-@media only screen and (max-width: 992px) {
-
-  // .headerStyle {
-  //   display: none;
-  // }
-}
 </style>

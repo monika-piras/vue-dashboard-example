@@ -2,7 +2,7 @@
   <div class="home">
 
     <div class="container">
-      <div class="row">
+      <div class="row no-margin">
         <div class="col-sm">
           <h4 class="titleChartStyle">User's Gender</h4>
           <apexchart width="500" type="bar" :options="chartDataBar.chartOptions" :series="chartDataBar.series"></apexchart>

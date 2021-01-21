@@ -72,7 +72,7 @@ export default {
   max-height: 100% !important;
 }
 @media only screen and (max-width: 992px) {
-  .hiddenOnMobile {
+ .hiddenOnMobile {
     display: none;
   }
 }
