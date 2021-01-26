@@ -7,7 +7,7 @@
           <!-- only mobile -->
           <div class="d-block d-sm-none">
             <div class="buttonMenuStyle">
-              <b-button class="button-style" v-b-toggle.sidebar-backdrop>
+              <b-button class="app-button-style" v-b-toggle.sidebar-backdrop>
                 <b-icon-justify></b-icon-justify>
               </b-button>
             </div>
@@ -110,16 +110,16 @@ export default {
   top: 5px;
   left: 7px;
 }
-.button-style {
+.app-button-style {
   background-color: transparent;
   border: none;
 }
-.button-style:hover   {
+.app-button-style:hover   {
   background-color: transparent;
   border: none;
 }
 
-.button-style:focus, .button-style:active{
+.app-button-style:focus, .app-button-style:active{
  background-color: transparent;
  border: none;
  outline: none;
