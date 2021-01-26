@@ -20,8 +20,8 @@
         <md-table-cell md-label="Name" md-sort-by="name">{{ item.name }}</md-table-cell>
         <md-table-cell md-label="Surname" md-sort-by="surname">{{ item.surname }}</md-table-cell>
         <!-- <md-table-cell md-label="Email" md-sort-by="email">{{ item.email }}</md-table-cell> -->
-        <md-table-cell md-label="Gender" md-sort-by="gender">{{ item.gender }}</md-table-cell>
-        <md-table-cell class="hiddenOnMobile" md-label="Person Age" md-sort-by="age">{{ item.age }}</md-table-cell>
+        <md-table-cell  md-label="Gender" md-sort-by="gender">{{ item.gender }}</md-table-cell>
+        <md-table-cell  md-label="Person Age" md-sort-by="age">{{ item.age }}</md-table-cell>
         <!-- <md-table-cell md-label="Job Title" md-sort-by="title">{{ item.title }}</md-table-cell> -->
         <md-table-cell md-label="" md-sort-by="">
           <button type="button" class="btn btn-outline-primary btn-sm" v-on:click="edit(item)">Edit</button>
@@ -72,8 +72,6 @@ export default {
   max-height: 100% !important;
 }
 @media only screen and (max-width: 992px) {
- .hiddenOnMobile {
-    display: none;
-  }
+
 }
 </style>

@@ -95,6 +95,22 @@ nav {
   .navbar-brand {
     font-size: 14px;
   }
+  .nav-link {
+    color: rgb(33, 44, 61) !important;
+  
+    &.router-link-exact-active {
+    background-color: rgb(33, 44, 61) !important;
+    color: white !important;
+
+    .icon-style {
+      color: white !important;
+    }
+  } 
+  
+  }
+  nav {
+    background-color: white !important;
+  }
 }
 
 </style>

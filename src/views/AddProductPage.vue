@@ -1,6 +1,6 @@
 <template>
   <div class="margin-page-style">
-      <h4>ADD PRODUCT PAGE</h4>
+      <h4 class="h4-margin-style">ADD PRODUCT PAGE</h4>
       
       <form-product-component/>
   </div>
@@ -21,6 +21,9 @@ export default {
 <style lang="scss" scoped>
 .margin-page-style {
     margin: 15px;
+}
+.h4-margin-style {
+    margin-bottom: 30px;
 }
 </style>
 

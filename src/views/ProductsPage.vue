@@ -1,12 +1,10 @@
 <template>
   <div class="page-style">
     <div class="h1-style">
-    <h1>Products</h1>
-    <div>
-<button class=" btn btn-primary add-button-style" @click="addProduct()">Add Product</button>
-
-    </div>
-
+      <h1 class="h1-style-mobile">Products</h1>
+      <div>
+        <button class=" btn btn-primary add-button-style" @click="addProduct()">Add Product</button>
+      </div>
     </div>
 
     <div class="row">
@@ -82,12 +80,20 @@ img {
   margin-top: 10px;
 }
 .h1-style {
-  position: relative;;
+  position: relative;
 }
 .add-button-style {
-    position: absolute;
-    right: 0;
-    top: 0;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+@media only screen and (max-width: 992px) {
+  .h1-style {
+    margin-bottom: 20px;
+  }
+  .h1-style-mobile {
+    font-size: 1.5rem;
+  }
 }
 </style>
 

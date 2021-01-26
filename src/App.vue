@@ -6,37 +6,37 @@
           <router-link to="/" class="navbar-brand">VUE DASHBOARD</router-link>
           <!-- only mobile -->
           <div class="d-block d-sm-none">
-
             <div class="buttonMenuStyle">
-              <b-button v-b-toggle.sidebar-backdrop>
+              <b-button class="button-style" v-b-toggle.sidebar-backdrop>
                 <b-icon-justify></b-icon-justify>
-                <b-icon-list></b-icon-list>
-                <b-icon-three-dots-vertical></b-icon-three-dots-vertical>
               </b-button>
-
-              <b-sidebar id="sidebar-backdrop" title="Sidebar with backdrop" backdrop shadow>
-                <div class="px-3 py-2">
-                  <b-form-group>
-
-                    <navigation-component/>
-
-                  </b-form-group>
-                </div>
-              </b-sidebar>
             </div>
-
           </div>
         </header>
       </div>
     </div>
+
     <div class="row row-full-height no-margin">
+
       <div class="col-sm-2 d-none d-sm-block no-padding">
         <navigation-component/>
       </div>
+
       <div class="col-xs-12 col-sm-10 no-padding">
         <router-view/>
       </div>
+
     </div>
+
+    <!-- sidebar mobile menu -->
+    <b-sidebar id="sidebar-backdrop" title="Sidebar with backdrop" backdrop shadow>
+      <div class="px-3 py-2">
+        <b-form-group>
+          <navigation-component/>
+        </b-form-group>
+      </div>
+    </b-sidebar>
+
   </div>
 </template>
 
@@ -108,7 +108,21 @@ export default {
 .buttonMenuStyle {
   position: absolute;
   top: 5px;
-  right: 7px;
+  left: 7px;
+}
+.button-style {
+  background-color: transparent;
+  border: none;
+}
+.button-style:hover   {
+  background-color: transparent;
+  border: none;
+}
+
+.button-style:focus, .button-style:active{
+ background-color: transparent;
+ border: none;
+ outline: none;
 }
 .navbar-brand {
   margin: 10px;
@@ -119,5 +133,9 @@ export default {
 body {
   height: 100%;
 }
-
+@media only screen and (max-width: 992px) {
+  .headerStyle {
+    text-align: center;
+  }
+}
 </style>
