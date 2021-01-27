@@ -83,8 +83,10 @@ nav {
 @media (min-width: 576px) {
 
 }
-@media only screen and (min-width: 768px) {
- 
+@media only screen and (width: 768px) {
+ .icon-style {
+   margin-bottom: 10px;
+ }
 }
 
 @media only screen and (max-width: 992px) {

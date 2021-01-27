@@ -4,7 +4,6 @@
       <h1 class="h1-style-mobile">Contacts</h1>
       <button type="button" class="btn btn-primary buttonStyle" @click="addUser()">Add User</button>
     </div>
-
     <table-search-component/>
   </div>
 </template>

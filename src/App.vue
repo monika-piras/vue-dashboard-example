@@ -29,12 +29,19 @@
     </div>
 
     <!-- sidebar mobile menu -->
-    <b-sidebar id="sidebar-backdrop" title="Sidebar with backdrop" backdrop shadow>
-      <div class="px-3 py-2">
-        <b-form-group>
-          <navigation-component/>
-        </b-form-group>
-      </div>
+    <b-sidebar id="sidebar-backdrop" backdrop shadow>
+      <b-form-group>
+        <navigation-component/>
+      </b-form-group>
+
+      <button type="button" aria-label="Close" class="close text-dark">
+        <svg viewBox="0 0 16 16" width="1em" height="1em" focusable="false" role="img" aria-label="x" xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi-x b-icon bi">
+          <g>
+            <path fill-rule="evenodd" d="M11.854 4.146a.5.5 0 0 1 0 .708l-7 7a.5.5 0 0 1-.708-.708l7-7a.5.5 0 0 1 .708 0z"></path>
+            <path fill-rule="evenodd" d="M4.146 4.146a.5.5 0 0 0 0 .708l7 7a.5.5 0 0 0 .708-.708l-7-7a.5.5 0 0 0-.708 0z"></path>
+          </g>
+        </svg>
+      </button>
     </b-sidebar>
 
   </div>
@@ -114,15 +121,16 @@ export default {
   background-color: transparent;
   border: none;
 }
-.app-button-style:hover   {
+.app-button-style:hover {
   background-color: transparent;
   border: none;
 }
 
-.app-button-style:focus, .app-button-style:active{
- background-color: transparent;
- border: none;
- outline: none;
+.app-button-style:focus,
+.app-button-style:active {
+  background-color: transparent;
+  border: none;
+  outline: none;
 }
 .navbar-brand {
   margin: 10px;
@@ -130,9 +138,31 @@ export default {
 .row-full-height {
   height: 100%;
 }
+html,
 body {
   height: 100%;
+  overflow: auto;
 }
+.b-sidebar-header {
+  display: none !important;
+}
+.px-3,
+.py-2 {
+  padding: 1rem 0 !important;
+}
+
+#sidebar-backdrop {
+  max-width: 80% !important;
+}
+
+.close {
+  position: absolute;
+  top: 20px;
+  right: -45px;
+  color: #fff !important;
+  opacity: 1;
+}
+
 @media only screen and (max-width: 992px) {
   .headerStyle {
     text-align: center;

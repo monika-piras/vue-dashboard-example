@@ -16,13 +16,10 @@
       </md-table-empty-state>
 
       <md-table-row slot="md-table-row" slot-scope="{ item }">
-        <!-- <md-table-cell md-label="ID" md-sort-by="id" md-numeric>{{ item.id }}</md-table-cell> -->
         <md-table-cell md-label="Name" md-sort-by="name">{{ item.name }}</md-table-cell>
         <md-table-cell md-label="Surname" md-sort-by="surname">{{ item.surname }}</md-table-cell>
-        <!-- <md-table-cell md-label="Email" md-sort-by="email">{{ item.email }}</md-table-cell> -->
-        <md-table-cell  md-label="Gender" md-sort-by="gender">{{ item.gender }}</md-table-cell>
-        <md-table-cell  md-label="Person Age" md-sort-by="age">{{ item.age }}</md-table-cell>
-        <!-- <md-table-cell md-label="Job Title" md-sort-by="title">{{ item.title }}</md-table-cell> -->
+        <md-table-cell md-label="Gender" md-sort-by="gender">{{ item.gender }}</md-table-cell>
+        <md-table-cell md-label="Person Age" md-sort-by="age">{{ item.age }}</md-table-cell>
         <md-table-cell md-label="" md-sort-by="">
           <button type="button" class="btn btn-outline-primary btn-sm" v-on:click="edit(item)">Edit</button>
         </md-table-cell>
