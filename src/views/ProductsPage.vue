@@ -24,9 +24,7 @@
           </div>
         </div>
       </div>
-
     </div>
-
   </div>
 </template>
 
@@ -55,6 +53,7 @@ export default {
   }
 };
 </script>
+
 <style lang="scss" scoped>
 h1 {
   text-align: left;
@@ -87,6 +86,7 @@ img {
   right: 0;
   top: 0;
 }
+
 @media only screen and (max-width: 992px) {
   .h1-style {
     margin-bottom: 20px;
@@ -96,4 +96,3 @@ img {
   }
 }
 </style>
-

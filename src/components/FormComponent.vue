@@ -78,9 +78,9 @@ export default {
   methods: {
     fillForm() {
       (this.form.fname = this.user.name),
-      (this.form.lname = this.user.surname),
-      (this.form.email = this.user.email),
-      (this.form.gender = this.user.gender);
+        (this.form.lname = this.user.surname),
+        (this.form.email = this.user.email),
+        (this.form.gender = this.user.gender);
     },
 
     onSubmit(evt) {
@@ -158,7 +158,6 @@ export default {
   },
 
   computed: {
-    
     validationName() {
       return this.form.fname.length > 1 && this.form.fname.length <= 20;
     },
@@ -169,7 +168,7 @@ export default {
       var re = /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
       return re.test(this.form.email);
     },
-    
+
     isFormNameValid() {
       return !this.isSubmitted && !this.form.fname ? null : this.validationName;
     },
@@ -186,8 +185,8 @@ export default {
   }
 };
 </script>
-<style lang="scss" scoped>
 
+<style lang="scss" scoped>
 .font-weight-style {
   font-weight: 700;
 }
@@ -198,10 +197,12 @@ export default {
   display: block;
   margin: 0;
 }
+
 /deep/.col-form-label {
   float: left;
   text-align: left;
 }
+
 .invalid-feedback {
   margin: 0.5rem;
 }

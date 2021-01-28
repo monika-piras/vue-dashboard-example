@@ -30,7 +30,6 @@ export default {
 };
 </script>
 
-<!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped lang="scss">
 a {
   color: #92abcf !important;
@@ -80,17 +79,15 @@ nav {
 .buttonMobile {
   display: none;
 }
-@media (min-width: 576px) {
 
-}
 @media only screen and (width: 768px) {
- .icon-style {
-   margin-bottom: 10px;
- }
+  .icon-style {
+    margin-bottom: 10px;
+  }
 }
 
 @media only screen and (max-width: 992px) {
-   .buttonMobile {
+  .buttonMobile {
     display: block;
     margin-bottom: 20px;
   }
@@ -99,20 +96,18 @@ nav {
   }
   .nav-link {
     color: rgb(33, 44, 61) !important;
-  
-    &.router-link-exact-active {
-    background-color: rgb(33, 44, 61) !important;
-    color: white !important;
 
-    .icon-style {
+    &.router-link-exact-active {
+      background-color: rgb(33, 44, 61) !important;
       color: white !important;
+
+      .icon-style {
+        color: white !important;
+      }
     }
-  } 
-  
   }
   nav {
     background-color: white !important;
   }
 }
-
 </style>

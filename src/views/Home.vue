@@ -1,23 +1,19 @@
 <template>
-  <div class="home">
-
     <div class="container">
+
       <div class="row no-margin">
         <div class="col-sm">
           <h4 class="titleChartStyle">User's Gender</h4>
           <apexchart width="500" type="bar" :options="chartDataBar.chartOptions" :series="chartDataBar.series"></apexchart>
         </div>
+
         <div class="col-sm">
           <h4 class="titleChartStyle">User's Age</h4>
           <apexchart width="380" type="donut" :options="chartDataDonut.chartOptions" :series="chartDataDonut.series"></apexchart>
         </div>
-
       </div>
-    </div>
 
-    <div>
     </div>
-  </div>
 </template>
 
 <script>
@@ -25,15 +21,12 @@
 export default {
   name: "Home",
   components: {},
-
   data() {
     return {
-      isActive: true,
-      showDiv:false
+      isActive: true
     };
   },
-  methods: {
-  },
+  methods: {},
   computed: {
     men() {
       var personsList = this.$store.getters["usersStore/getUsers"];
@@ -127,27 +120,16 @@ export default {
   }
 };
 </script>
+
 <style lang="scss" scoped>
 /deep/ .apexcharts-canvas {
   margin: 0 auto;
   margin-top: 50px;
   cursor: pointer;
 }
+
 .titleChartStyle {
   margin: 30px 0 40px 0;
   text-transform: uppercase;
-}
-.div{
-  width: 100px;
-  height: 100px;
-  display: inline-block;
-  border: 1px solid black;
-}
-.yellow{
-  background: yellow;
-}
-
-.orange{
-  background: orange;
 }
 </style>

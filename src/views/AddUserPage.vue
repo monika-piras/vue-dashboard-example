@@ -5,9 +5,8 @@
       <h4>ADD USER PAGE</h4>
 
       <form-component/>
-      
-    </div>
 
+    </div>
   </div>
 </template>
 
@@ -23,6 +22,7 @@ export default {
 };
 </script>
 <style lang="scss" scoped>
+
 h1 {
   text-align: left;
 }
@@ -44,8 +44,8 @@ h4 {
 /deep/.container {
   max-height: 100px !important;
 }
+
 .margin-page-style {
   margin: 15px;
 }
 </style>
-

@@ -9,8 +9,6 @@
 </template>
 
 <script>
-// @ is an alias to /src
-
 import TableSearchComponent from "@/components/TableSearchComponent.vue";
 
 export default {
@@ -20,11 +18,12 @@ export default {
   },
   methods: {
     addUser() {
-       this.$router.push('addUserPage');
+      this.$router.push("addUserPage");
     }
   }
 };
 </script>
+
 <style lang="scss" scoped>
 h1 {
   text-align: left;
@@ -36,10 +35,11 @@ h1 {
   padding: 20px;
 }
 .buttonStyle {
-  position: absolute; 
-  right: 0; 
-  top: 0; 
+  position: absolute;
+  right: 0;
+  top: 0;
 }
+
 @media only screen and (max-width: 992px) {
   .h1-style {
     margin-bottom: 20px;
@@ -49,4 +49,3 @@ h1 {
   }
 }
 </style>
-

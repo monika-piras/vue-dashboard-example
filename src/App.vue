@@ -17,7 +17,6 @@
     </div>
 
     <div class="row row-full-height no-margin">
-
       <div class="col-sm-2 d-none d-sm-block no-padding">
         <navigation-component/>
       </div>
@@ -25,7 +24,6 @@
       <div class="col-xs-12 col-sm-10 no-padding">
         <router-view/>
       </div>
-
     </div>
 
     <!-- sidebar mobile menu -->
@@ -75,10 +73,8 @@ export default {
 };
 </script>
 
-
 <style lang="scss">
 #app {
-  // font-family: Avenir, Helvetica, Arial, sans-serif;
   font-family: "Nunito", sans-serif;
   font-size: 16px;
   -webkit-font-smoothing: antialiased;
@@ -134,6 +130,8 @@ export default {
 }
 .navbar-brand {
   margin: 10px;
+  color: white !important;
+  text-decoration: none !important;
 }
 .row-full-height {
   height: 100%;

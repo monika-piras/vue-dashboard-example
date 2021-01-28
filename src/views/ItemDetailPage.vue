@@ -10,10 +10,9 @@
                         </div>
                     </div>
                 </div>
+
                 <div class="col-sm-6">
-
                     <h3 class="card-title">{{productDetail.title}}</h3>
-
                     <div class="card-content">
                         <p class="card-text">
                             {{productDetail.description}}
@@ -31,9 +30,7 @@
                     </div>
                 </div>
             </div>
-
         </div>
-
     </div>
 </template>
 
@@ -62,13 +59,17 @@ export default {
   }
 };
 </script>
+
 <style lang="scss" scoped>
+
 h4 {
   margin: 30px;
 }
+
 /deep/.container {
   max-height: 100px !important;
 }
+
 .icon-style {
   margin-right: 10px;
 }

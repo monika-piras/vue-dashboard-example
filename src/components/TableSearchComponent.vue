@@ -2,9 +2,7 @@
   <div>
     <md-table v-model="searched" md-sort="id" md-sort-order="asc" md-card md-fixed-header>
       <md-table-toolbar>
-        <div class="md-toolbar-section-start">
-          <!-- <h1 class="md-title">All Users</h1> -->
-        </div>
+        <div class="md-toolbar-section-start"></div>
 
         <md-field md-clearable class="md-toolbar-section-end">
           <md-input placeholder="Search by name..." v-model="search" @input="searchOnTable" />
@@ -67,8 +65,5 @@ export default {
   max-width: 90% !important;
   height: 100% !important;
   max-height: 100% !important;
-}
-@media only screen and (max-width: 992px) {
-
 }
 </style>

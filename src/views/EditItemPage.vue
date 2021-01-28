@@ -1,7 +1,8 @@
 <template>
   <div class="margin-page-style">
-      <h3>Edit Item Page</h3>
-      <form-product-component v-if="this.productEditDetail" v-bind:editItem="this.productEditDetail"/>
+    <h3>Edit Item Page</h3>
+    
+    <form-product-component v-if="this.productEditDetail" v-bind:editItem="this.productEditDetail" />
   </div>
 </template>
 
@@ -9,12 +10,12 @@
 import FormProductComponent from "@/components/FormProductComponent.vue";
 
 export default {
-name: "EditItemPage",
-components: {
-  FormProductComponent
-},
+  name: "EditItemPage",
+  components: {
+    FormProductComponent
+  },
 
-computed: {
+  computed: {
     paramID() {
       return this.$route.params.id;
     },
@@ -24,8 +25,7 @@ computed: {
       );
     }
   }
-}
-
+};
 </script>
 
 <style lang="scss" scoped>
@@ -33,4 +33,3 @@ computed: {
   margin: 15px;
 }
 </style>
-

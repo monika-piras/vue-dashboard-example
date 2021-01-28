@@ -64,9 +64,10 @@
         </label>
         <div class="input-image-display">
           <input type="text" class="form-control mb-2 input-width" id="inlineFormInput5" v-model="imageString" placeholder="image url">
-          <span class="span-margin">or</span>
-          <input type="file" class="input-button" id="avatar" name="avatar" @change="onFileChanged" accept="image/png, image/jpeg">
         </div>
+          <span class="span-margin">or</span>
+        
+          <input type="file" class="input-button" id="avatar" name="avatar" @change="onFileChanged" accept="image/png, image/jpeg">
 
         <div class="text-red-style" v-if="isErrorImage">Image required.</div>
       </div>
@@ -257,11 +258,9 @@ export default {
 .text-red-style {
   color: red;
 }
-
 .text-left {
   text-align: left;
 }
-
 .inline {
   display: inline;
   margin-right: 1rem;
@@ -273,19 +272,18 @@ export default {
   width: 25%;
 }
 .span-margin {
-  margin: 20px;
+  margin: 10px;
+  display: block;
 }
 .input-button {
-  line-height: 2.1;
+  margin-bottom: 10px;
 }
 .switch-margin {
   margin: 40px;
 }
-
 .red {
   color: red;
 }
-
 .text-left {
   text-align: left;
 }
