@@ -32,7 +32,7 @@ export default {
     mutations: {
         loadProductsMutation(state) {
             axios
-                .get('api/contacts')
+                .get('http://localhost:3000/products')
                 .then(response => {
                     const list = response.data.list;
                     state.allProducts.splice(0, state.allProducts.length);

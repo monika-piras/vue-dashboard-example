@@ -27,7 +27,7 @@ export default {
     mutations: {
         loadUsersMutation(state) {
             axios
-                .get('/users.json')
+                .get('http://localhost:3000/users')
                 .then(response => {
                     const list = response.data.list;
                     state.allUsers.splice(0, state.allUsers.length);
