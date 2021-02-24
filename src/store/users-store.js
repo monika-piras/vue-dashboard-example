@@ -27,7 +27,7 @@ export default {
     mutations: {
         loadUsersMutation(state) {
             axios
-                .get('http://localhost:3000/users')
+                .get(process.env.VUE_APP_URL + '/users')
                 .then(response => {
                     const list = response.data.list;
                     state.allUsers.splice(0, state.allUsers.length);

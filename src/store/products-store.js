@@ -17,22 +17,12 @@ export default {
             const productIndex = state.allProducts.findIndex(x => x.id == productID);
             return state.allProducts[productIndex];
         }
-
-        // search: (state) => (searchedValue) => {
-
-        //     searchedValue = searchedValue.toLowerCase();
-
-        //     return state.allUsers.filter((item) => {
-        //         return item.name.toLowerCase().includes(searchedValue);
-        //     })
-        // },
-
     },
 
     mutations: {
         loadProductsMutation(state) {
             axios
-                .get('http://localhost:3000/products')
+                .get(process.env.VUE_APP_URL + '/products')
                 .then(response => {
                     const list = response.data.list;
                     state.allProducts.splice(0, state.allProducts.length);
