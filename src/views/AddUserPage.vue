@@ -36,7 +36,6 @@ h1 {
 h4 {
   margin: 30px 0;
 }
-
 .buttonStyle {
   position: absolute;
   right: 0;
@@ -48,6 +47,7 @@ h4 {
 .icon-style {
   margin-right: 10px;
 }
+
 /deep/ .form-row > .col,
 .form-row > [class*="col-"] {
   text-align: left;

@@ -77,7 +77,6 @@ img {
 .card-title {
   min-height: 48px;
 }
-
 .button-style {
   margin-top: 10px;
 }

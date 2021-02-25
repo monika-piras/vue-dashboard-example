@@ -7,7 +7,6 @@
       </h4>
 
       <form-component v-if="this.user" v-bind:user="this.user" />
-
     </div>
   </div>
 </template>
@@ -51,6 +50,7 @@ h4 {
 .icon-style {
   margin-right: 10px;
 }
+
 /deep/.container {
   max-height: 100px !important;
 }

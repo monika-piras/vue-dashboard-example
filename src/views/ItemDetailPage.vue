@@ -76,7 +76,6 @@ export default {
 .margin-page-style {
   margin: 15px;
 }
-
 h4 {
   margin: 30px 0;
 }
@@ -84,6 +83,7 @@ h4 {
 /deep/.container {
   max-height: 100px !important;
 }
+
 .button-style {
   float: left;
 }

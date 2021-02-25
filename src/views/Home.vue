@@ -1,6 +1,5 @@
 <template>
     <div class="container">
-
       <div class="row no-margin">
         <div class="col-sm">
           <h4 class="titleChartStyle">User's Gender</h4>
@@ -12,7 +11,6 @@
           <apexchart width="380" type="donut" :options="chartDataDonut.chartOptions" :series="chartDataDonut.series"></apexchart>
         </div>
       </div>
-
     </div>
 </template>
 
@@ -26,7 +24,6 @@ export default {
       isActive: true
     };
   },
-  methods: {},
   computed: {
     men() {
       var personsList = this.$store.getters["usersStore/getUsers"];
