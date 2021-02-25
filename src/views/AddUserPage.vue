@@ -2,7 +2,10 @@
   <div class="container">
     <div class="margin-page-style">
 
-      <h4>ADD USER PAGE</h4>
+      <h4>ADD USER PAGE
+        <button @click="goBack()" class="btn btn-secondary button-style">
+          <b-icon icon="chevron-left" scale=".8" class="icon-style"></b-icon>Go Back</button>
+      </h4>
 
       <form-component/>
 
@@ -18,16 +21,20 @@ export default {
   name: "AddUserPage",
   components: {
     FormComponent
+  },
+  methods: {
+    goBack() {
+      this.$router.push("/contacts");
+    }
   }
 };
 </script>
 <style lang="scss" scoped>
-
 h1 {
   text-align: left;
 }
 h4 {
-  margin: 30px;
+  margin: 30px 0;
 }
 
 .buttonStyle {
@@ -35,7 +42,12 @@ h4 {
   right: 0;
   top: 0;
 }
-
+.button-style {
+  float: left;
+}
+.icon-style {
+  margin-right: 10px;
+}
 /deep/ .form-row > .col,
 .form-row > [class*="col-"] {
   text-align: left;

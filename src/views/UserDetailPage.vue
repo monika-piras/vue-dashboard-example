@@ -1,7 +1,10 @@
 <template>
   <div class="container">
     <div class="margin-page-style">
-      <h4> USER DETAIL PAGE </h4>
+      <h4> USER DETAIL PAGE
+        <button @click="goBack()" class="btn btn-secondary button-style">
+          <b-icon icon="chevron-left" scale=".8" class="icon-style"></b-icon>Go Back</button>
+      </h4>
 
       <form-component v-if="this.user" v-bind:user="this.user" />
 
@@ -23,6 +26,11 @@ export default {
       user: Object
     };
   },
+  methods: {
+    goBack() {
+      this.$router.push("/contacts");
+    }
+  },
   created() {
     this.user = this.$route.params.paramUser;
 
@@ -35,9 +43,14 @@ export default {
 
 <style lang="scss" scoped>
 h4 {
-  margin: 30px;
+  margin: 30px 0;
 }
-
+.button-style {
+  float: left;
+}
+.icon-style {
+  margin-right: 10px;
+}
 /deep/.container {
   max-height: 100px !important;
 }

@@ -1,9 +1,12 @@
 <template>
-    <div class="margin-page-style">
-        <h4 class="h4-margin-style">ADD PRODUCT PAGE</h4>
+  <div class="margin-page-style">
+    <h4 class="h4">ADD PRODUCT PAGE
+      <button @click="goBack()" class="btn btn-secondary button-style">
+        <b-icon icon="chevron-left" scale=".8" class="icon-style"></b-icon>Go Back</button>
+    </h4>
 
-        <form-product-component/>
-    </div>
+    <form-product-component/>
+  </div>
 </template>
 
 <script>
@@ -13,14 +16,26 @@ export default {
   name: "AddProductPage",
   components: {
     FormProductComponent
+  },
+  methods: {
+    goBack() {
+      this.$router.push("/products");
+    }
   }
 };
 </script>
 <style lang="scss" scoped>
+h4 {
+  margin: 30px 0;
+}
 .margin-page-style {
   margin: 15px;
 }
-.h4-margin-style {
-  margin-bottom: 30px;
+
+.button-style {
+  float: left;
+}
+.icon-style {
+  margin-right: 10px;
 }
 </style>

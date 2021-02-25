@@ -18,7 +18,7 @@
               <h6>Condition: {{item.condition ? "new" : "used"}}</h6>
               <span></span>
               <div>
-                <button @click="goToItemDetail(item.id)" class="btn btn-outline-primary button-style">Description</button>
+                <button @click="goToItemDetail(item.id)" class="btn btn-outline-primary button-style">Open details</button>
               </div>
             </div>
           </div>
