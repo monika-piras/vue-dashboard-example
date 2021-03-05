@@ -10,6 +10,7 @@
 </template>
 
 <script>
+
 import FormProductComponent from "@/components/FormProductComponent.vue";
 
 export default {
@@ -36,6 +37,7 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+
 h3 {
   margin: 30px 0;
 }

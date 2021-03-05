@@ -37,13 +37,11 @@ const routes = [
     path: '/itemDetailPage/:id',
     name: 'itemDetailPage',
     component: ItemDetailPage,
-    // props: true
   },
   {
     path: '/editItemPage/:id',
     name: 'editItemPage',
     component: EditItemPage,
-    // props: true
   },
   {
     path: '/addProductPage',

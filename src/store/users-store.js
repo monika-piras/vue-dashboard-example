@@ -37,14 +37,13 @@ export default {
         updateUserMutation(state, userParam) {
 
             console.log("new user mutation ", userParam);
-            //    console.log(state.allUsers);
             var index = state.allUsers.findIndex((x) => x.id == userParam.id);
             state.allUsers.splice(index, 1, userParam);
         },
         addUserMutation(state, userParam) {
 
             console.log("add new user mutation ", userParam);
-           state.allUsers.push(userParam);
+            state.allUsers.push(userParam);
         }
     },
 
@@ -74,6 +73,5 @@ export default {
 
             });
         }
-    },
-
+    }
 };

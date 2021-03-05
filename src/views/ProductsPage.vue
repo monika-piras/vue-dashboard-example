@@ -29,7 +29,6 @@
 </template>
 
 <script>
-// @ is an alias to /src
 
 export default {
   name: "ProductsPage",
@@ -58,6 +57,7 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+
 h1 {
   text-align: left;
 }

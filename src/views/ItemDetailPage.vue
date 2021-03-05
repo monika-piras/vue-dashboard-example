@@ -41,6 +41,7 @@
 </template>
 
 <script>
+
 export default {
   name: "ItemDetailPage",
   components: {},
@@ -73,6 +74,7 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+
 .margin-page-style {
   margin: 15px;
 }

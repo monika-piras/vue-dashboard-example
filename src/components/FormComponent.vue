@@ -1,6 +1,5 @@
 <template>
   <div>
-
     <div class="text-center" v-if="isLoading">
       <b-spinner variant="primary" label="Text Centered"></b-spinner>
     </div>
@@ -45,11 +44,11 @@
 
       <b-button type="submit" variant="primary">Submit</b-button>
     </b-form>
-
   </div>
 </template>
 
 <script>
+
 export default {
   name: "FormComponent",
   props: {
@@ -78,9 +77,9 @@ export default {
   methods: {
     fillForm() {
       (this.form.fname = this.user.name),
-        (this.form.lname = this.user.surname),
-        (this.form.email = this.user.email),
-        (this.form.gender = this.user.gender);
+      (this.form.lname = this.user.surname),
+      (this.form.email = this.user.email),
+      (this.form.gender = this.user.gender);
     },
 
     onSubmit(evt) {
@@ -187,6 +186,7 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+
 .font-weight-style {
   font-weight: 700;
 }

@@ -21,37 +21,14 @@
         <textarea name="message" class="form-control mb-2" id="inlineFormInput2" v-model="description" placeholder="description"></textarea>
         <div class="text-red-style" v-if="isErrorDescription">Description required.</div>
       </div>
-      <!-- 
-      <div class="text-left mb-3">
-        <div class="form-group align-left font-weight-style">
-          Category
-        </div>
-        <div class="form-group form-check inline align-left">
-          <input type="checkbox" class="form-check-input" id="laptop" value="laptop" v-model="checkedCategories">
-          <label for="laptop" class="form-check-label">Laptops</label>
-        </div>
-        <div class="form-group form-check inline align-left">
-          <input type="checkbox" class="form-check-input" id="smartphone" value="smartphone" v-model="checkedCategories">
-          <label for="smartphone" class="form-check-label">Smartphones</label>
-        </div>
-        <div class="form-group form-check inline align-left">
-          <input type="checkbox" class="form-check-input" id="games" value="games" v-model="checkedCategories">
-          <label for="games" class="form-check-label">Games</label>
-        </div>
-        <div class="form-group form-check inline align-left">
-          <input type="checkbox" class="form-check-input" id="tv" value="tv" v-model="checkedCategories">
-          <label for="tv" class="form-check-label">TV</label>
-        </div>
-        <div class="form-group form-check inline align-left">
-          <input type="checkbox" class="form-check-input" id="home" value="home" v-model="checkedCategories">
-          <label for="home" class="form-check-label">Home</label>
-        </div>
-        <div class="form-group form-check inline align-left">
-          <input type="checkbox" class="form-check-input" id="christmas" value="christmas" v-model="checkedCategories">
-          <label for="christmas" class="form-check-label">Christmas</label>
-        </div>
-      </div> -->
 
+      <!-- CATEGORY-->
+      <div class="form-group align-left">
+        <label class="left font-weight-style" for="inlineFormInput2">Category</label>
+        <textarea name="message" class="form-control mb-2" id="inlineFormInput2" v-model="category" placeholder="category"></textarea>
+      </div>
+
+      <!-- PRICE-->
       <div class="form-group align-left">
         <label class="left font-weight-style" for="inlineFormInput2">Price</label>
         <textarea name="message" class="form-control mb-2" id="inlineFormInput2" v-model="price" placeholder="price"></textarea>
@@ -65,9 +42,9 @@
         <div class="input-image-display">
           <input type="text" class="form-control mb-2 input-width" id="inlineFormInput5" v-model="imageString" placeholder="image url">
         </div>
-          <span class="span-margin">or</span>
-        
-          <input type="file" class="input-button" id="avatar" name="avatar" @change="onFileChanged" accept="image/png, image/jpeg">
+        <span class="span-margin">or</span>
+
+        <input type="file" class="input-button" id="avatar" name="avatar" @change="onFileChanged" accept="image/png, image/jpeg">
 
         <div class="text-red-style" v-if="isErrorImage">Image required.</div>
       </div>
@@ -90,6 +67,7 @@
 </template>
 
 <script>
+
 export default {
   name: "FormProductComponent",
   components: {},
@@ -104,7 +82,7 @@ export default {
       isErrorTitle: false,
       description: this.editItem ? this.editItem.description : null,
       isErrorDescription: false,
-      //category
+      category: this.editItem ? this.editItem.category : null,
       price: this.editItem ? this.editItem.price : null,
       condition: this.editItem ? this.editItem.condition : true,
       imageString: this.editItem ? this.editItem.image : null,
@@ -185,7 +163,7 @@ export default {
         var updateProduct = {
           title: this.title,
           description: this.description,
-          category: "games",
+          category: this.category,
           price: this.price,
           condition: this.condition,
           image: this.imageString ? this.imageString : this.imageBase64,
@@ -215,7 +193,7 @@ export default {
         var product = {
           title: this.title,
           description: this.description,
-          // categories: this.checkedCategories,
+          category: this.category,
           price: this.price,
           condition: this.condition,
           image: this.imageString ? this.imageString : this.imageBase64,
@@ -247,8 +225,8 @@ export default {
 };
 </script>
 
-
 <style scoped>
+
 .left {
   float: left;
 }

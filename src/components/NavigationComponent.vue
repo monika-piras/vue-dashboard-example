@@ -21,6 +21,7 @@
 </template>
 
 <script>
+
 export default {
   name: "NavigationComponent",
   props: {},
@@ -31,6 +32,7 @@ export default {
 </script>
 
 <style scoped lang="scss">
+
 a {
   color: #92abcf !important;
   font-weight: 600 !important;

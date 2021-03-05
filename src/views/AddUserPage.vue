@@ -14,7 +14,7 @@
 </template>
 
 <script>
-// @ is an alias to /src
+
 import FormComponent from "@/components/FormComponent.vue";
 
 export default {
@@ -29,7 +29,9 @@ export default {
   }
 };
 </script>
+
 <style lang="scss" scoped>
+
 h1 {
   text-align: left;
 }

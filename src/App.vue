@@ -102,21 +102,25 @@ export default {
 .paddingCol-style {
   padding: 0;
 }
+
 .headerStyle {
   text-align: left;
   background-color: rgb(33, 44, 61);
   border-top: 10px solid rgb(33, 44, 61);
   position: relative;
 }
+
 .buttonMenuStyle {
   position: absolute;
   top: 5px;
   left: 7px;
 }
+
 .app-button-style {
   background-color: transparent;
   border: none;
 }
+
 .app-button-style:hover {
   background-color: transparent;
   border: none;
@@ -128,22 +132,27 @@ export default {
   border: none;
   outline: none;
 }
+
 .navbar-brand {
   margin: 10px;
   color: white !important;
   text-decoration: none !important;
 }
+
 .row-full-height {
   height: 100%;
 }
+
 html,
 body {
   height: 100%;
   overflow: auto;
 }
+
 .b-sidebar-header {
   display: none !important;
 }
+
 .px-3,
 .py-2 {
   padding: 1rem 0 !important;

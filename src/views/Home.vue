@@ -15,7 +15,7 @@
 </template>
 
 <script>
-// @ is an alias to /src
+
 export default {
   name: "Home",
   components: {},
@@ -47,7 +47,6 @@ export default {
 
       return over30;
     },
-
     ageUnder30() {
       var personsList = this.$store.getters["usersStore/getUsers"];
       var usersUnder30 = personsList.filter(item => item.age <= 30);
@@ -119,6 +118,7 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+
 /deep/ .apexcharts-canvas {
   margin: 0 auto;
   margin-top: 50px;
