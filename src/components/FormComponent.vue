@@ -12,7 +12,6 @@
         <b-form-invalid-feedback :state="isFormNameValid">
           Your Name must be 2-20 characters long.
         </b-form-invalid-feedback>
-
       </b-form-group>
 
       <b-form-group label-cols-sm="3" class="font-weight-style" id="input-group-2" label="Surname:" label-for="input-2b">
@@ -21,15 +20,18 @@
         <b-form-invalid-feedback :state="isFormSurnameValid">
           Your Surname ID must be 2-20 characters long.
         </b-form-invalid-feedback>
-
       </b-form-group>
 
       <b-form-group label-cols-sm="3" class="font-weight-style" id="input-group-1" label="Email address:" label-for="input-1" description="We'll never share your email with anyone else.">
         <b-form-input id="input-1" v-model="form.email" :state="isFormEmailValid" type="email" placeholder="Enter email"></b-form-input>
+        
         <b-form-invalid-feedback :state="isFormEmailValid">
           Your Email is incorrect.
         </b-form-invalid-feedback>
+      </b-form-group>
 
+      <b-form-group label-cols-sm="3" class="font-weight-style width-style" id="input-group-2" label="Age:" label-for="input-2b">
+        <b-form-input id="input-2b" v-model="form.age" placeholder="Enter age"></b-form-input>
       </b-form-group>
 
       <b-form-group class="mt-2 font-weight-style" label="Gender:">
@@ -38,7 +40,6 @@
             <b-form-radio name="some-radios" value="male">Male</b-form-radio>
             <b-form-radio name="some-radios" value="female">Female</b-form-radio>
           </span>
-
         </b-form-radio-group>
       </b-form-group>
 
@@ -48,7 +49,6 @@
 </template>
 
 <script>
-
 export default {
   name: "FormComponent",
   props: {
@@ -62,6 +62,7 @@ export default {
       form: {
         fname: "",
         lname: "",
+        age: "",
         email: "",
         gender: ""
       }
@@ -78,6 +79,7 @@ export default {
     fillForm() {
       (this.form.fname = this.user.name),
       (this.form.lname = this.user.surname),
+      (this.form.age = this.user.age),
       (this.form.email = this.user.email),
       (this.form.gender = this.user.gender);
     },
@@ -97,6 +99,7 @@ export default {
           var newUser = {
             name: this.form.fname,
             surname: this.form.lname,
+            age: this.form.age,
             email: this.form.email,
             gender: this.form.gender,
             id: this.user.id
@@ -126,6 +129,7 @@ export default {
           var newUser = {
             name: this.form.fname,
             surname: this.form.lname,
+            age: this.form.age,
             email: this.form.email,
             gender: this.form.gender,
             id: Math.random() * 100
@@ -186,9 +190,11 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-
 .font-weight-style {
   font-weight: 700;
+}
+.width-style {
+  width: 15%;
 }
 .font-weight-radio {
   font-weight: 400;
