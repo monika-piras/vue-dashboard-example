@@ -3,7 +3,7 @@
     <div class="margin-page-style">
 
       <h4>ADD USER PAGE
-        <button @click="goBack()" class="btn btn-secondary button-style">
+        <button @click="goBack()" class="btn btn-secondary button-style button-style-mobile">
           <b-icon icon="chevron-left" scale=".8" class="icon-style"></b-icon>Go Back</button>
       </h4>
 
@@ -32,16 +32,8 @@ export default {
 
 <style lang="scss" scoped>
 
-h1 {
-  text-align: left;
-}
 h4 {
   margin: 30px 0;
-}
-.buttonStyle {
-  position: absolute;
-  right: 0;
-  top: 0;
 }
 .button-style {
   float: left;
@@ -62,4 +54,5 @@ h4 {
 .margin-page-style {
   margin: 15px;
 }
+
 </style>

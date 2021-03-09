@@ -215,4 +215,11 @@ export default {
 .bv-no-focus-ring {
   text-align: left;
 }
+
+@media only screen and (max-width: 568px) {
+  
+  .width-style {
+    width: 25%;
+  }
+}
 </style>

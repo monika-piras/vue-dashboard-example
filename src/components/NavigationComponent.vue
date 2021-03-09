@@ -78,9 +78,9 @@ nav {
 .nav-item {
   text-align: left;
 }
-.buttonMobile {
-  display: none;
-}
+// .buttonMobile {
+//   display: none;
+// }
 
 @media only screen and (width: 768px) {
   .icon-style {
@@ -89,10 +89,10 @@ nav {
 }
 
 @media only screen and (max-width: 992px) {
-  .buttonMobile {
-    display: block;
-    margin-bottom: 20px;
-  }
+  // .buttonMobile {
+  //   display: block;
+  //   margin-bottom: 20px;
+  // }
   .navbar-brand {
     font-size: 14px;
   }

@@ -1,12 +1,15 @@
 <template>
+<div class="container">
   <div class="margin-page-style">
-    <h4 class="h4">ADD PRODUCT PAGE
-      <button @click="goBack()" class="btn btn-secondary button-style">
+
+    <h4>ADD PRODUCT PAGE
+      <button @click="goBack()" class="btn btn-secondary button-style button-style-mobile">
         <b-icon icon="chevron-left" scale=".8" class="icon-style"></b-icon>Go Back</button>
     </h4>
 
     <form-product-component/>
   </div>
+</div>
 </template>
 
 <script>
@@ -34,11 +37,11 @@ h4 {
 .margin-page-style {
   margin: 15px;
 }
-
 .button-style {
   float: left;
 }
 .icon-style {
   margin-right: 10px;
 }
+
 </style>
