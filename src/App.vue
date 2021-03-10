@@ -175,11 +175,8 @@ body {
   html{
     font-size: 14px;
   }
-}
-@media only screen and (max-width: 992px) {
   .headerStyle {
     text-align: center;
   }
 }
-
 </style>

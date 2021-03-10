@@ -21,7 +21,6 @@
 </template>
 
 <script>
-
 export default {
   name: "NavigationComponent",
   props: {},
@@ -32,7 +31,6 @@ export default {
 </script>
 
 <style scoped lang="scss">
-
 a {
   color: #92abcf !important;
   font-weight: 600 !important;
@@ -78,38 +76,31 @@ nav {
 .nav-item {
   text-align: left;
 }
-// .buttonMobile {
-//   display: none;
-// }
 
-@media only screen and (width: 768px) {
-  .icon-style {
-    margin-bottom: 10px;
+
+@media (min-width: 768px) and (max-width: 991.98px) {
+  nav {
+    background-color: rgb(33, 44, 61) !important;
   }
-}
-
-@media only screen and (max-width: 992px) {
-  // .buttonMobile {
-  //   display: block;
-  //   margin-bottom: 20px;
-  // }
   .navbar-brand {
     font-size: 14px;
   }
   .nav-link {
-    color: rgb(33, 44, 61) !important;
+    color: #fff !important;
+    padding-right: 30px;
+
+    .icon-style {
+      margin-bottom: 10px;
+    }
 
     &.router-link-exact-active {
-      background-color: rgb(33, 44, 61) !important;
-      color: white !important;
+      background-color: #fff !important;
+      color: rgb(33, 44, 61) !important;
 
       .icon-style {
-        color: white !important;
+        color: rgb(33, 44, 61) !important;
       }
     }
-  }
-  nav {
-    background-color: white !important;
   }
 }
 </style>
