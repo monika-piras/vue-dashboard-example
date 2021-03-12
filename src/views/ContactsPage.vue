@@ -47,7 +47,7 @@ h1 {
     margin-bottom: 20px;
   }
   .h1-style-mobile {
-    font-size: 1.5rem;
+    font-size: 2rem;
   }
 }
 </style>

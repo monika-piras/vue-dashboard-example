@@ -76,7 +76,23 @@ nav {
 .nav-item {
   text-align: left;
 }
+@media only screen and (max-width: 568px) {
+  nav {
+    background-color: #fff !important;
+    .nav-link {
+      color: rgb(33, 44, 61) !important;
 
+      &.router-link-exact-active {
+        background-color: rgb(33, 44, 61) !important;
+        color: #fff !important;
+
+        .icon-style {
+          color: #fff !important;
+        }
+      }
+    }
+  }
+}
 
 @media (min-width: 768px) and (max-width: 991.98px) {
   nav {

@@ -74,6 +74,7 @@ export default {
 </script>
 
 <style lang="scss">
+
 #app {
   font-family: "Nunito", sans-serif;
   font-size: 16px;
@@ -84,6 +85,11 @@ export default {
   height: 100%;
 }
 
+html,
+body {
+  height: 100%;
+  overflow: auto;
+}
 .container {
   width: 100%;
   max-width: 100%;
@@ -143,12 +149,6 @@ export default {
   height: 100%;
 }
 
-html,
-body {
-  height: 100%;
-  overflow: auto;
-}
-
 .b-sidebar-header {
   display: none !important;
 }
@@ -169,7 +169,6 @@ body {
   color: #fff !important;
   opacity: 1;
 }
-
 
 @media only screen and (max-width: 568px) {
   html{

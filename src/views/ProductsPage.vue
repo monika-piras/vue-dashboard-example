@@ -8,28 +8,27 @@
     </div>
 
     <div class="row">
-      <div class="col-sm-3" v-for="item in items">
-        <div class="card">
-          <div class="card-body">
-            <img class="card-img-top" :src="getImagePath(item.image)" style="width:18rem;">
-            <h5 class="card-title">{{item.title}}</h5>
+      <div class="col-lg-4" v-for="item in items">
+          <div class="card">
+             <div class="card-body">
+              <img class="card-img-top" :src="getImagePath(item.image)" style="width:18rem;">
+             
+              <h5 class="card-title">{{item.title}}</h5>
 
-            <div class="card-content">
-              <h6>Condition: {{item.condition ? "new" : "used"}}</h6>
-              <span></span>
-              <div>
-                <button @click="goToItemDetail(item.id)" class="btn btn-outline-primary button-style">Open details</button>
+              <div class="card-content">
+                <h6>Condition: {{item.condition ? "new" : "used"}}</h6>
+                <div class="">
+                  <button @click="goToItemDetail(item.id)" class="btn btn-outline-primary button-style">Open details</button>
+                </div>
               </div>
             </div>
           </div>
-        </div>
       </div>
     </div>
   </div>
 </template>
 
 <script>
-
 export default {
   name: "ProductsPage",
   components: {},
@@ -57,7 +56,6 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-
 h1 {
   text-align: left;
 }
@@ -88,13 +86,12 @@ img {
   right: 0;
   top: 0;
 }
-
-@media only screen and (max-width: 992px) {
+@media only screen and (max-width: 992px){
   .h1-style {
     margin-bottom: 20px;
   }
   .h1-style-mobile {
-    font-size: 1.5rem;
+    font-size: 2rem;
   }
 }
 </style>
