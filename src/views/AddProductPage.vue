@@ -30,7 +30,6 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-
 h4 {
   margin: 30px 0;
 }

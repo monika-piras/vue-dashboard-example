@@ -1,9 +1,9 @@
 <template>
   <div class="margin-page-style">
-    <h3>Edit Item Page
+    <h4>EDIT ITEM PAGE
       <button @click="goBack(productEditDetail.id)" class="btn btn-secondary button-style">
         <b-icon icon="chevron-left" scale=".8" class="icon-style"></b-icon>Go Back</button>
-    </h3>
+    </h4>
 
     <form-product-component v-if="this.productEditDetail" v-bind:editItem="this.productEditDetail" />
   </div>
@@ -37,8 +37,7 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-
-h3 {
+h4 {
   margin: 30px 0;
 }
 .margin-page-style {

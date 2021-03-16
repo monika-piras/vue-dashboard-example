@@ -74,7 +74,6 @@ export default {
 </script>
 
 <style lang="scss">
-
 #app {
   font-family: "Nunito", sans-serif;
   font-size: 16px;

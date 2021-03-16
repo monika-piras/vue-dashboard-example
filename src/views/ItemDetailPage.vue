@@ -74,7 +74,6 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-
 .margin-page-style {
   margin: 15px;
 }
