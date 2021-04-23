@@ -17,7 +17,7 @@
 
               <div class="card-content">
                 <h6>Condition: {{item.condition ? "new" : "used"}}</h6>
-                <div class="">
+                <div>
                   <button @click="goToItemDetail(item.id)" class="btn btn-outline-primary button-style">Open details</button>
                 </div>
               </div>

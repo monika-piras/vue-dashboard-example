@@ -74,6 +74,12 @@ export default {
 </script>
 
 <style lang="scss">
+html,
+body {
+  height: 100%;
+  overflow: auto;
+}
+
 #app {
   font-family: "Nunito", sans-serif;
   font-size: 16px;
@@ -84,11 +90,6 @@ export default {
   height: 100%;
 }
 
-html,
-body {
-  height: 100%;
-  overflow: auto;
-}
 .container {
   width: 100%;
   max-width: 100%;
