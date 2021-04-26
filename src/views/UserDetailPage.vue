@@ -12,7 +12,6 @@
 </template>
 
 <script>
-
 import FormComponent from "@/components/FormComponent.vue";
 
 export default {
@@ -31,6 +30,7 @@ export default {
       this.$router.push("/contacts");
     }
   },
+
   created() {
     this.user = this.$route.params.paramUser;
 
@@ -42,7 +42,6 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-
 h4 {
   margin: 30px 0;
 }
