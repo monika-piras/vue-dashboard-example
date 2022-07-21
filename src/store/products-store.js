@@ -24,9 +24,24 @@ export default {
             axios
                 .get(process.env.VUE_APP_URL + '/products')
                 .then(response => {
-                    const list = response.data.list;
+                    const serverList = response.data.list;
+                 
+                    //if you don't want to change the original array from the API 
+                    //server use map
+
+                    // const parsedList = serverList.map(item =>{
+                    //     return  {
+                    //         ...item,
+                    //         image : process.env.VUE_APP_URL + item.image
+                    //     }
+                    // });
+
+                    serverList.forEach((item) =>{
+                        item.image =  process.env.VUE_APP_URL + item.image
+                    });
+                  
                     state.allProducts.splice(0, state.allProducts.length);
-                    state.allProducts.push(...list);
+                    state.allProducts.push(...serverList);
                 })
         },
 

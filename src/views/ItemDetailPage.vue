@@ -11,7 +11,7 @@
           <div class="col-sm-6">
             <div class="card">
               <div class="card-body">
-                <img class="card-img-top" v-bind:src="getImagePath(productDetail.image)" style="width:18rem;">
+                <img class="card-img-top" v-bind:src="productDetail.image" style="width:18rem;">
               </div>
             </div>
           </div>
@@ -55,10 +55,8 @@ export default {
     },
     editItem(id) {
       this.$router.push("/editItemPage/" + id);
-    },
-    getImagePath(localPath) {
-      return process.env.VUE_APP_URL + localPath;
     }
+  
   },
   computed: {
     paramID() {

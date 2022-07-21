@@ -11,7 +11,7 @@
       <div class="col-lg-4" v-for="item in items">
           <div class="card">
              <div class="card-body">
-              <img class="card-img-top" :src="getImagePath(item.image)" style="width:18rem;">
+              <img class="card-img-top" :src="item.image" style="width:18rem;">
              
               <h5 class="card-title">{{item.title}}</h5>
 
@@ -38,9 +38,7 @@ export default {
     };
   },
   methods: {
-    getImagePath(localPath) {
-      return process.env.VUE_APP_URL + localPath;
-    },
+ 
     goToItemDetail(id) {
       this.$router.push("/itemDetailPage/" + id);
     },
