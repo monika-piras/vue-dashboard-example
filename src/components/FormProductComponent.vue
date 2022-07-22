@@ -148,11 +148,11 @@ export default {
       }
     },
     formHasErrors() {
-      var risultato = false;
+      var result = false;
       if (this.isErrorTitle || this.isErrorDescription || this.isErrorImage) {
-        risultato = true;
+        result = true;
       }
-      return risultato;
+      return result;
     },
     hasMinLength(paramToCompare, length) {
       return paramToCompare.length >= length;
