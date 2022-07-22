@@ -9,20 +9,20 @@
 
     <div class="row">
       <div class="col-lg-4" v-for="item in items">
-          <div class="card">
-             <div class="card-body">
-              <img class="card-img-top" :src="item.image" style="width:18rem;">
-             
-              <h5 class="card-title">{{item.title}}</h5>
+        <div class="card">
+          <div class="card-body">
+            <img class="card-img-top" :src="item.image" style="width:18rem;">
 
-              <div class="card-content">
-                <h6>Condition: {{item.condition ? "new" : "used"}}</h6>
-                <div>
-                  <button @click="goToItemDetail(item.id)" class="btn btn-outline-primary button-style">Open details</button>
-                </div>
+            <h5 class="card-title">{{item.title}}</h5>
+
+            <div class="card-content">
+              <h6>Condition: {{item.condition ? "new" : "used"}}</h6>
+              <div>
+                <button @click="goToItemDetail(item.id)" class="btn btn-outline-primary button-style">Open details</button>
               </div>
             </div>
           </div>
+        </div>
       </div>
     </div>
   </div>
@@ -38,7 +38,6 @@ export default {
     };
   },
   methods: {
- 
     goToItemDetail(id) {
       this.$router.push("/itemDetailPage/" + id);
     },
@@ -84,7 +83,7 @@ img {
   right: 0;
   top: 0;
 }
-@media only screen and (max-width: 992px){
+@media only screen and (max-width: 992px) {
   .h1-style {
     margin-bottom: 20px;
   }

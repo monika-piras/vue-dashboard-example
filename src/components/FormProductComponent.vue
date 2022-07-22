@@ -77,7 +77,6 @@ export default {
   data: function() {
     return {
       isLoading: false,
-
       title: this.editItem ? this.editItem.title : null,
       isErrorTitle: false,
       description: this.editItem ? this.editItem.description : null,

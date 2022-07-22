@@ -58,7 +58,6 @@ export default {
 }
 
 /deep/ .md-table-content {
-  // width: 90% !important;
   max-width: 90% !important;
   height: 100% !important;
   max-height: 100% !important;
