@@ -23,9 +23,9 @@ The site is responsive and mobile friendly.
 
 The user can:
 
--view the detail of the user/product
--edit the detail of the user/product
--add a new user/product to the list by filling in the form with controls
+- view the detail of the user/product
+- edit the detail of the user/product
+- add a new user/product to the list by filling in the form with controls
 
 
 
@@ -51,4 +51,3 @@ MIT
 
 
 [VueJS]: <https://vuejs.org>
-
