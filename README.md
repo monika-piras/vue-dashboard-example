@@ -5,6 +5,8 @@ Online demo here: https://monika-piras.github.io/vue-dashboard-example/
 
 
 
+
+
 An example about how to build a responsive and mobile friendly website with [VueJS], retrieving the data with an Api call from an API Server (built with hapijs) and updating the internal state of the Vue Store by caching the data.
 
 Internal state changes are managed via Vuex following Flux pattern.
